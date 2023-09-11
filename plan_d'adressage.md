@@ -1,7 +1,7 @@
 
 Réseau principale : 172.28.0.0 /16 \
 vlan de Chartres  : 230 à 239 \
-vlan d'administration : 230 \
+vlan d'administration : 230 
 | Nom         | @réseau      | @diffusion     | CIDR |
 |-------------|--------------|----------------|------|
 | Chateauroux | 172.28.0.0   | 172.28.31.255  | /19  |
