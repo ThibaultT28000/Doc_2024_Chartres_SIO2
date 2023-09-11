@@ -1,7 +1,7 @@
 
-Réseau principale : 172.28.0.0 /16
-vlan de Chartres  : 230 à 239
-vlan d'administration : 230
+Réseau principale : 172.28.0.0 /16 \n
+vlan de Chartres  : 230 à 239 \n
+vlan d'administration : 230   \n
 
 | Nom         | @réseau      | @diffusion     | CIDR |
 |-------------|--------------|----------------|------|
