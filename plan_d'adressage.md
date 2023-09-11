@@ -1,7 +1,9 @@
-| En-tête de colonne 1 | En-tête de colonne 2 | En-tête de colonne 3 |
-|-----------------------|-----------------------|-----------------------|
-| Élément de ligne 1, col 1 | Élément de ligne 1, col 2 | Élément de ligne 1, col 3 |
-| Élément de ligne 2, col 1 | Élément de ligne 2, col 2 | Élément de ligne 2, col 3 |
-| Élément de ligne 3, col 1 | Élément de ligne 3, col 2 | Élément de ligne 3, col 3 |
-|-----------------------|-----------------------|-----------------------|
-| Total                |                        | Total                |
+
+
+| Nom         | @réseau      | @diffusion     | CIDR |
+|-------------|--------------|----------------|------|
+| Chateauroux | 172.28.0.0   | 172.28.31.255  | /19  |
+| Tours       | 172.28.32.0  | 172.28.63.255  | /19  |
+| Chartres    | 172.28.64.0  | 172.28.95.255  | /19  |
+| Orléans     | 172.28.96.0  | 172.28.127.255 | /19  |
+|-------------|--------------|----------------|------|
