@@ -10,13 +10,13 @@ Laissant ainsi à l'entreprise de la place pour se développer et intégrer de n
 
 | @Réseau | @Diffusion | CIDR |  VLANs assignés |
 |----------|--------|----------------|----------------------|
-|172.28.64.0 | 172.28.95.255 | /19 | 210 à 219 |
+|172.28.0.0 | 172.28.31.255 | /19 | 210 à 219 |
 
 ## **Réseau de Tours**
 
 | @Réseau | @Diffusion | CIDR |  VLANs assignés |
 |----------|--------|----------------|----------------------|
-|172.28.64.0 | 172.28.95.255 | /19 | 220 à 229 |
+|172.28.32.0 | 172.28.63.255 | /19 | 220 à 229 |
 
 ## **Réseau de Chartres**
 
@@ -28,4 +28,4 @@ Laissant ainsi à l'entreprise de la place pour se développer et intégrer de n
 
 | @Réseau | @Diffusion | CIDR |  VLANs assignés |
 |----------|--------|----------------|----------------------|
-|172.28.64.0 | 172.28.95.255 | /19 | 240 à 249 |
+|172.28.96.0 | 172.28.127.255 | /19 | 240 à 249 |
