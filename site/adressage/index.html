@@ -151,68 +151,33 @@
         <p><h1 id="plan-dadressage-du-reseau"><strong>Plan d'adressage du réseau</strong></h1>
 <p>L'entièreté des sites est basée sur l'adresse IP <strong><code>172.28.0.0 /16</code></strong>. </p>
 <p>Dû à la taille de l'entreprise, nous avons décidé d'utiliser comme masque de sous-réseau <strong><code>/19</code></strong>, permettant d'avoir 8 VLAN disponibles. </p>
-<p>Laissant ainsi à l'entreprise de la place pour se développer et intégrer de nouveaux sites à son infrastructure.</p>
-<h2 id="reseau-de-chateauroux"><strong>Réseau de Chateauroux</strong></h2>
-<table>
-<thead>
-<tr>
-<th>@Réseau</th>
-<th>@Diffusion</th>
-<th>CIDR</th>
-<th>VLANs assignés</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>172.28.0.0</td>
-<td>172.28.31.255</td>
-<td>/19</td>
-<td>210 à 219</td>
-</tr>
-</tbody>
-</table>
-<h2 id="reseau-de-tours"><strong>Réseau de Tours</strong></h2>
-<table>
-<thead>
-<tr>
-<th>@Réseau</th>
-<th>@Diffusion</th>
-<th>CIDR</th>
-<th>VLANs assignés</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>172.28.32.0</td>
-<td>172.28.63.255</td>
-<td>/19</td>
-<td>220 à 229</td>
-</tr>
-</tbody>
-</table>
+<p>Laissant ainsi à l'entreprise de la place pour se développer et intégrer de nouveaux sites à son infrastructure.
+</br></p>
 <h2 id="reseau-de-chartres"><strong>Réseau de Chartres</strong></h2>
 <table>
 <thead>
 <tr>
+<th>Nom de Réseau</th>
 <th>@Réseau</th>
 <th>@Diffusion</th>
 <th>CIDR</th>
-<th>VLANs assignés</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>Chartres</td>
 <td>172.28.64.0</td>
 <td>172.28.95.255</td>
 <td>/19</td>
-<td>240 à 249</td>
 </tr>
 </tbody>
 </table>
-<h2 id="reseau-dorleans"><strong>Réseau d'Orléans</strong></h2>
+<p></br></p>
+<h2 id="vlans-assignes">VLANs assignés</h2>
 <table>
 <thead>
 <tr>
+<th>Nom Vlan</th>
 <th>@Réseau</th>
 <th>@Diffusion</th>
 <th>CIDR</th>
@@ -221,13 +186,325 @@
 </thead>
 <tbody>
 <tr>
-<td>172.28.96.0</td>
-<td>172.28.127.255</td>
-<td>/19</td>
-<td>240 à 249</td>
+<td>Management</td>
+<td>172.28.64.0</td>
+<td>172.28.64.255</td>
+<td>/24</td>
+<td>230</td>
+</tr>
+<tr>
+<td></td>
+<td>172.28..0</td>
+<td>172.28..255</td>
+<td>/24</td>
+<td>231</td>
+</tr>
+<tr>
+<td></td>
+<td>172.28..0</td>
+<td>172.28..255</td>
+<td>/24</td>
+<td>232</td>
+</tr>
+<tr>
+<td></td>
+<td>172.28..0</td>
+<td>172.28..255</td>
+<td>/24</td>
+<td>233</td>
+</tr>
+<tr>
+<td>DMZ</td>
+<td>172.28.94.0</td>
+<td>172.28.94.255</td>
+<td>/24</td>
+<td>234</td>
+</tr>
+<tr>
+<td></td>
+<td>172.28..0</td>
+<td>172.28..255</td>
+<td>/24</td>
+<td>235</td>
+</tr>
+<tr>
+<td></td>
+<td>172.28..0</td>
+<td>172.28..255</td>
+<td>/24</td>
+<td>236</td>
+</tr>
+<tr>
+<td></td>
+<td>172.28..0</td>
+<td>172.28..255</td>
+<td>/24</td>
+<td>237</td>
+</tr>
+<tr>
+<td></td>
+<td>172.28..0</td>
+<td>172.28..255</td>
+<td>/24</td>
+<td>238</td>
+</tr>
+<tr>
+<td></td>
+<td>172.28..0</td>
+<td>172.28..255</td>
+<td>/24</td>
+<td>239</td>
 </tr>
 </tbody>
-</table></p>
+</table>
+<h2 id="vlan-230-management-administration">VLAN 230 (Management / Administration)</h2>
+<table>
+<thead>
+<tr>
+<th>Nom Hôte</th>
+<th>@IP</th>
+<th>CIDR</th>
+<th>Passerelle</th>
+<th>DNS</th>
+<th>Port assigné</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Switch</td>
+<td>172.28.64.1</td>
+<td>/24</td>
+<td></td>
+<td></td>
+<td>FastEthernet0/1</td>
+</tr>
+<tr>
+<td>Hôte Management</td>
+<td>172.28.64.2</td>
+<td>/24</td>
+<td></td>
+<td></td>
+<td>GigabitEthernet 1/0/1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="vlan-231">VLAN 231</h2>
+<table>
+<thead>
+<tr>
+<th>Nom Hôte</th>
+<th>@IP</th>
+<th>CIDR</th>
+<th>Passerelle</th>
+<th>DNS</th>
+<th>Port assigné</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="vlan-232">VLAN 232</h2>
+<table>
+<thead>
+<tr>
+<th>Nom Hôte</th>
+<th>@IP</th>
+<th>CIDR</th>
+<th>Passerelle</th>
+<th>DNS</th>
+<th>Port assigné</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="vlan-233">VLAN 233</h2>
+<table>
+<thead>
+<tr>
+<th>Nom Hôte</th>
+<th>@IP</th>
+<th>CIDR</th>
+<th>Passerelle</th>
+<th>DNS</th>
+<th>Port assigné</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="vlan-234-dmz">VLAN 234 (DMZ)</h2>
+<table>
+<thead>
+<tr>
+<th>Nom Hôte</th>
+<th>@IP</th>
+<th>CIDR</th>
+<th>Passerelle</th>
+<th>DNS</th>
+<th>Port assigné</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DNS</td>
+<td>172.28.94.1</td>
+<td>/24</td>
+<td></td>
+<td>127.0.0.1</td>
+<td>GigabitEthernet#/#/#</td>
+</tr>
+</tbody>
+</table>
+<h2 id="vlan-235">VLAN 235</h2>
+<table>
+<thead>
+<tr>
+<th>Nom Hôte</th>
+<th>@IP</th>
+<th>CIDR</th>
+<th>Passerelle</th>
+<th>DNS</th>
+<th>Port assigné</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="vlan-236">VLAN 236</h2>
+<table>
+<thead>
+<tr>
+<th>Nom Hôte</th>
+<th>@IP</th>
+<th>CIDR</th>
+<th>Passerelle</th>
+<th>DNS</th>
+<th>Port assigné</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="vlan-237">VLAN 237</h2>
+<table>
+<thead>
+<tr>
+<th>Nom Hôte</th>
+<th>@IP</th>
+<th>CIDR</th>
+<th>Passerelle</th>
+<th>DNS</th>
+<th>Port assigné</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="vlan-238">VLAN 238</h2>
+<table>
+<thead>
+<tr>
+<th>Nom Hôte</th>
+<th>@IP</th>
+<th>CIDR</th>
+<th>Passerelle</th>
+<th>DNS</th>
+<th>Port assigné</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="vlan-239">VLAN 239</h2>
+<table>
+<thead>
+<tr>
+<th>Nom Hôte</th>
+<th>@IP</th>
+<th>CIDR</th>
+<th>Passerelle</th>
+<th>DNS</th>
+<th>Port assigné</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p></br>
+plage de Vlan : 230 à 239</p>
+<pre><code>Vlan de management : 230
+Vlan : 231
+Vlan : 232
+Vlan : 233
+Vlan DMZ : 234
+</code></pre>
+<h2 id="dns">DNS</h2>
+<p>nom de domaine réseau privé : local.chartres.sportludique.fr</p></p>
     </article>
 </section>
             <!-- endblock -->
