@@ -1,5 +1,5 @@
 # **Plan d'adressage du réseau**
-<br />
+
 L'entièreté des sites est basée sur l'adresse IP **`172.28.0.0 /16`**. 
 
 Dû à la taille de l'entreprise, nous avons décidé d'utiliser comme masque de sous-réseau **`/19`**, permettant d'avoir 8 VLAN disponibles. 
