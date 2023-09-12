@@ -11,9 +11,3 @@ Le projet consiste à répondre à la demande de création d'un réseau informat
 * Travailler en équipe 
 * Réaliser une documentation détailler 
 * Administré un réseau pour qu'il corresponde au attente d'un client
-<<<<<<< HEAD
-
-
-=======
-* Test 
->>>>>>> 7360de64c3e7c288c9ddd42dd51a2e42c80e7061
