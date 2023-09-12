@@ -14,6 +14,8 @@ Laissant ainsi à l'entreprise de la place pour se développer et intégrer de n
 
 </br>
 
+## VLANs assignés
+
 | Nom Vlan | @Réseau | @Diffusion | CIDR |  VLANs assignés |
 |----|----------|--------|----------------|----------------------|
 | Management | 172.28.64.0 | 172.28.64.255 | /24 | 230
@@ -26,6 +28,58 @@ Laissant ainsi à l'entreprise de la place pour se développer et intégrer de n
 |  | 172.28..0 | 172.28..255 | /24 | 237
 |  | 172.28..0 | 172.28..255 | /24 | 238
 |  | 172.28..0 | 172.28..255 | /24 | 239
+
+## VLAN 230 (Management / Administration)
+
+| Nom Hôte | @IP | CIDR | Passerelle    | DNS | Port assigné |
+|----------|-----|--------|---------------|-----|--------------|
+| Switch   | 172.28.64.1  | /24 |     | |Fa0/1         
+| DNS      | 172.28.64.2  | /24 |  | 127.0.0.1 | GigabitEthernet 1/0/1
+
+## VLAN 231
+
+| Nom Hôte | @IP | CIDR | Passerelle    | DNS | Port assigné |
+|----------|-----|--------|---------------|-----|--------------|
+
+## VLAN 232
+
+| Nom Hôte | @IP | CIDR | Passerelle    | DNS | Port assigné |
+|----------|-----|--------|---------------|-----|--------------|
+
+## VLAN 233
+
+| Nom Hôte | @IP | CIDR | Passerelle    | DNS | Port assigné |
+|----------|-----|--------|---------------|-----|--------------|
+
+## VLAN 234 (DMZ)
+
+| Nom Hôte | @IP | CIDR | Passerelle    | DNS | Port assigné |
+|----------|-----|--------|---------------|-----|--------------|
+
+## VLAN 235
+
+| Nom Hôte | @IP | CIDR | Passerelle    | DNS | Port assigné |
+|----------|-----|--------|---------------|-----|--------------|
+
+## VLAN 236
+
+| Nom Hôte | @IP | CIDR | Passerelle    | DNS | Port assigné |
+|----------|-----|--------|---------------|-----|--------------|
+
+## VLAN 237
+
+| Nom Hôte | @IP | CIDR | Passerelle    | DNS | Port assigné |
+|----------|-----|--------|---------------|-----|--------------|
+
+## VLAN 238
+
+| Nom Hôte | @IP | CIDR | Passerelle    | DNS | Port assigné |
+|----------|-----|--------|---------------|-----|--------------|
+
+## VLAN 239
+
+| Nom Hôte | @IP | CIDR | Passerelle    | DNS | Port assigné |
+|----------|-----|--------|---------------|-----|--------------|
 
 </br>
 plage de Vlan : 230 à 239
