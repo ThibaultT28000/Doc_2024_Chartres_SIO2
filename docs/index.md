@@ -2,7 +2,7 @@
 
 <!For full documentation visit [mkdocs.org](https://www.mkdocs.org).>
 
-## Objextif du projet 
+## Objectif du projet 
 
 * Développer une infrastructure réseau
 * Travailler en équipe 
