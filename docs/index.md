@@ -1,7 +1,6 @@
 # Documentation projet infrastructure SportLudique
-
 <!For full documentation visit [mkdocs.org](https://www.mkdocs.org).>
-
+<br />
 ## Objectif du projet 
 
 * Développer une infrastructure réseau
