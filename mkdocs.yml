@@ -1,1 +1,3 @@
 site_name: Documentation Projet 2024 SIO2
+theme:
+    name: dracula
