@@ -8,3 +8,4 @@
 * Travailler en équipe 
 * Réaliser une documentation détailler 
 * Administré un réseau pour qu'il corresponde au attente d'un client
+* Test 
