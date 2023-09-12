@@ -33,8 +33,8 @@ Laissant ainsi à l'entreprise de la place pour se développer et intégrer de n
 
 | Nom Hôte | @IP | CIDR | Passerelle    | DNS | Port assigné |
 |----------|-----|--------|---------------|-----|--------------|
-| Switch   | 172.28.64.1  | /24 |     | |Fa0/1         
-| DNS      | 172.28.64.2  | /24 |  | 127.0.0.1 | GigabitEthernet 1/0/1
+| Switch   | 172.28.64.1  | /24 |     | | FastEthernet0/1         
+| Hôte Management | 172.28.64.2  | /24 |  |  | GigabitEthernet 1/0/1
 
 ## VLAN 231
 
@@ -55,6 +55,7 @@ Laissant ainsi à l'entreprise de la place pour se développer et intégrer de n
 
 | Nom Hôte | @IP | CIDR | Passerelle    | DNS | Port assigné |
 |----------|-----|--------|---------------|-----|--------------|
+| DNS      | 172.28.94.1 | /24 |   | 127.0.0.1 | GigabitEthernet#/#/#
 
 ## VLAN 235
 
