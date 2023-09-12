@@ -6,6 +6,22 @@ Dû à la taille de l'entreprise, nous avons décidé d'utiliser comme masque de
 
 Laissant ainsi à l'entreprise de la place pour se développer et intégrer de nouveaux sites à son infrastructure.
 
+
+## **Réseau de Chartres**
+
+| @Réseau | @Diffusion | CIDR |  VLANs assignés |
+|----------|--------|----------------|----------------------|
+|172.28.64.0 | 172.28.95.255 | /19 | 240 à 249 |
+
+</br>
+plage de Vlan : 230 à 239
+
+    Vlan de management : 230
+    Vlan : 231
+    Vlan : 232
+    Vlan : 233
+    Vlan DMZ : 234
+
 ## **Réseau de Chateauroux**
 
 | @Réseau | @Diffusion | CIDR |  VLANs assignés |
@@ -17,12 +33,6 @@ Laissant ainsi à l'entreprise de la place pour se développer et intégrer de n
 | @Réseau | @Diffusion | CIDR |  VLANs assignés |
 |----------|--------|----------------|----------------------|
 |172.28.32.0 | 172.28.63.255 | /19 | 220 à 229 |
-
-## **Réseau de Chartres**
-
-| @Réseau | @Diffusion | CIDR |  VLANs assignés |
-|----------|--------|----------------|----------------------|
-|172.28.64.0 | 172.28.95.255 | /19 | 240 à 249 |
 
 ## **Réseau d'Orléans**
 
