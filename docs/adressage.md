@@ -35,6 +35,8 @@ Laissant ainsi à l'entreprise de la place pour se développer et intégrer de n
 |----------|-----|--------|---------------|-----|--------------|
 | Switch   | 172.28.64.1  | /24 |     | | GigabitEthernet 1/0/1         
 | Hôte Management | 172.28.64.2  | /24 |  |  | GigabitEthernet 1/0/1
+| Serveur DNS DMZ | 172.28.64.20 | /24 |  |  | GigabitEthernet#/#/#
+| Serveur DNS local | 172.28.64.10 | /24 |  |  | GigabitEthernet#/#/#
 
 ## VLAN 231 (Serveurs Locaux)
 
