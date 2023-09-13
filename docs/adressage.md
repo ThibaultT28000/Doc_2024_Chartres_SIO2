@@ -36,10 +36,11 @@ Laissant ainsi à l'entreprise de la place pour se développer et intégrer de n
 | Switch   | 172.28.64.1  | /24 |     | | GigabitEthernet 1/0/1         
 | Hôte Management | 172.28.64.2  | /24 |  |  | GigabitEthernet 1/0/1
 
-## VLAN 231
+## VLAN 231 (Serveurs Locaux)
 
-| Nom Hôte | @IP | CIDR | Passerelle    | DNS | Port assigné |
-|----------|-----|--------|---------------|-----|--------------|
+| Nom Hôte | @IP | Passerelle| DNS | Port assigné |
+|----------|-----|--------|---------------|-----|
+| DNS local | 172.28.65.1 |  | 172.28.94.1 | GigabitEthernet#/#/#
 
 ## VLAN 232
 
