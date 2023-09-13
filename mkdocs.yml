@@ -2,3 +2,10 @@ site_name: Documentation Projet 2024 SIO2
 theme:
   name: material
   custom_dir: overrides
+nav:
+  - index.md
+  - commande_md.md
+  - Configuration: 
+    - Plan d'adressage: adressage.md
+    - Créaction d'un vlan: vlan.md 
+    - Activation de SSH: ssh.md
