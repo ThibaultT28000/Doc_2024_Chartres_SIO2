@@ -33,7 +33,7 @@ Laissant ainsi à l'entreprise de la place pour se développer et intégrer de n
 
 | Nom Hôte | @IP | CIDR | Passerelle    | DNS | Port assigné |
 |----------|-----|--------|---------------|-----|--------------|
-| Switch   | 172.28.64.1  | /24 |     | | FastEthernet0/1         
+| Switch   | 172.28.64.1  | /24 |     | | GigabitEthernet 1/0/1         
 | Hôte Management | 172.28.64.2  | /24 |  |  | GigabitEthernet 1/0/1
 
 ## VLAN 231
@@ -81,15 +81,6 @@ Laissant ainsi à l'entreprise de la place pour se développer et intégrer de n
 
 | Nom Hôte | @IP | CIDR | Passerelle    | DNS | Port assigné |
 |----------|-----|--------|---------------|-----|--------------|
-
-</br>
-plage de Vlan : 230 à 239
-
-    Vlan de management : 230
-    Vlan : 231
-    Vlan : 232
-    Vlan : 233
-    Vlan DMZ : 234
 
 ## DNS
 
