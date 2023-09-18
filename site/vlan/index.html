@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-        <title>Commande md - Documentation Projet 2024 SIO2</title>
+        <title>Création d'un vlan - Documentation Projet 2024 SIO2</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -69,15 +69,15 @@
                 </a>
             </li>
             <li class="drac-box">
-                <a href="./"
-                    class=" active 
+                <a href="../commande_md/"
+                    class="
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     Commande md
                 </a>
             </li>
             <li class="drac-box">
                 <a href=".."
-                    class="
+                    class=" active 
                     drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
                     data-bs-toggle="collapse" data-bs-target="#configuration-collapse" aria-expanded="false">
                     Configuration
@@ -94,8 +94,8 @@
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="../vlan/"
-            class="
+        <a href="./"
+            class=" active 
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Création d'un vlan
         </a>
@@ -147,13 +147,13 @@
         <div class="container">
             <div class="row row-preview">
                 <div class="col">
-                    <a href=".."
+                    <a href="../adressage/"
                         class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </div>
                 <div class="col">
-                    <a href="../adressage/"
+                    <a href="../ssh/"
                         class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
@@ -185,54 +185,22 @@
             <!-- block content -->
                 <section class="p-md-5 section-content">
     <article>
-        <p><h1 id="commande-md"><strong>Commande md</strong></h1>
-<p><br /></p>
-<h2 id="liste-de-commande">Liste de commande</h2>
-<details>
-<br/>
-<summary style="color: red;"><strong><u>Faire un effet déroulant :</u></strong></summary>
-<br />
-Les balises HTML <strong>< details ></strong> et <strong>< summary ></strong> sont utilisées pour créer des éléments déroulants dans une page web. Voici un résumé de leur utilisation :
-<br /><br />
-<strong>< details ></strong> : Cette balise HTML englobe le contenu que vous souhaitez rendre déroulant ou caché. Lorsque la page est chargée, le contenu à l'intérieur de <strong>< details ></strong> est généralement masqué par défaut et n'est pas visible.
-<br /><br />
-<strong>< summary ></strong> : Cette balise HTML est utilisée comme le titre ou le résumé de l'élément déroulant. Le texte à l'intérieur de <strong>< summary ></strong> est généralement affiché comme un lien ou un texte cliquable, qui permet d'ouvrir ou de fermer l'élément déroulant.
-<br /><br /><br />
-</details>
-
-<details>
-<summary style="color: red;"><strong><u>Mettre en gras :</u></strong></summary>
-<br />
-Utilisation de double astérisques (<strong>**</strong>) ou de double underscores (<strong>__</strong>) :
-<br/><br/>
-<strong>**</strong>Texte en gras<strong>**</strong> ou <strong>__</strong>Texte en gras<strong>__</strong>
-Cette méthode est couramment utilisée et prend en charge le texte en gras à l'intérieur d'une ligne de texte.
-<br/><br/>
-Utilisation de balises HTML <strong>< strong ></strong> :
-<br/><br/>
-<strong>< strong ></strong> Texte en gras <strong>< /strong ></strong>
-Vous pouvez également utiliser les balises HTML <strong>< strong ></strong> pour mettre en gras le texte. Cette méthode offre un contrôle précis sur le formatage.
-<br/><br/>
-Utilisation de la balise HTML <strong>< b ></strong> :
-<br/><br/>
-<strong>< b ></strong> Texte en gras <strong>< /b ></strong>
-La balise HTML <strong>< b ></strong> peut également être utilisée pour mettre en gras le texte. Cependant, il est recommandé d'utiliser <strong>< strong ></strong> pour des raisons de sémantique.
-<br /><br /><br />
-</details>
-
-<h4 id="commands">Commands</h4>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<h4 id="project-layout">Project layout</h4>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre></p>
+        <p><h1 id="creation-de-vlans-sur-un-cisco-catalyst-3750-x">Création de VLANs sur un Cisco Catalyst 3750-X</h1>
+<p>Afin de créer des vlans nécessaire pour les differents services (Administration , Management, DMZ et autre)</p>
+<ol>
+<li>
+<p><strong>Connexion au commutateur :</strong> Utilisez une connexion console série ou SSH pour accéder au commutateur. Vous aurez besoin des informations d'identification appropriées pour vous connecter.</p>
+</li>
+<li>
+<p><strong>Accès au mode de configuration :</strong> Une fois connecté, entrez le mode de configuration en utilisant la commande <code>enable</code>.</p>
+</li>
+<li>
+<p><strong>Accès au mode de configuration VLAN :</strong> Accédez au mode de configuration des VLANs en utilisant la commande <code>configure terminal</code> ou <code>conf t</code>.</p>
+</li>
+<li>
+<p><strong>Création d'un VLAN :</strong> Utilisez la commande <code>vlan [numéro-du-vlan]</code> pour créer un nouveau VLAN. Remplacez <code>[numéro-du-vlan]</code> par le numéro du VLAN que vous souhaitez créer (par exemple, 10).</p>
+</li>
+</ol></p>
     </article>
 </section>
             <!-- endblock -->
