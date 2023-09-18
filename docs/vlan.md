@@ -18,9 +18,9 @@ Voici comment créer des VLANs (Virtual LANs) sur un switch Cisco Catalyst 3750-
 
 5. **Nommer le VLAN (facultatif) :** Nous modifirons également le nom du vlan par celui donné en annexe (ici ce sera Management)
 
-   \```
+   `
    switch(config-vlan)# name Management
-   \```
+   `
 
 6. **Affectation des ports au VLAN :** Pour attribuer des ports spécifiques à ce VLAN, on utilisera la commande `int gi1/0/1`pour l'interface Gigabyte du switch 1 et port 1 et aprés nous utiliserons la commande `switchport access vlan 230`.
 
