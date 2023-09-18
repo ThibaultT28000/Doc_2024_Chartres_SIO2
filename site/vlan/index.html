@@ -186,19 +186,40 @@
                 <section class="p-md-5 section-content">
     <article>
         <p><h1 id="creation-de-vlans-sur-un-cisco-catalyst-3750-x">Création de VLANs sur un Cisco Catalyst 3750-X</h1>
-<p>Afin de créer des vlans nécessaire pour les differents services (Administration , Management, DMZ et autre)</p>
+<p>Voici comment créer des VLANs (Virtual LANs) sur un switch Cisco Catalyst 3750-X:</p>
 <ol>
 <li>
-<p><strong>Connexion au commutateur :</strong> Utilisez une connexion console série ou SSH pour accéder au commutateur. Vous aurez besoin des informations d'identification appropriées pour vous connecter.</p>
+<p><strong>Connection au VLAN:</strong> Tout d'abord nous allons nous connecter en serie ou en ssh </p>
 </li>
 <li>
-<p><strong>Accès au mode de configuration :</strong> Une fois connecté, entrez le mode de configuration en utilisant la commande <code>enable</code>.</p>
+<p><strong>Accès au mode de configuration :</strong> Une fois connecté, nous activerons le mode privilège en utilisant la commande <code>enable</code>.</p>
 </li>
 <li>
-<p><strong>Accès au mode de configuration VLAN :</strong> Accédez au mode de configuration des VLANs en utilisant la commande <code>configure terminal</code> ou <code>conf t</code>.</p>
+<p><strong>Accès au mode de configuration VLAN :</strong> Ensuite, nous avons accédé au mode de configuration en utilisant la commande <code>configure terminal</code> ou <code>conf t</code>.</p>
 </li>
 <li>
-<p><strong>Création d'un VLAN :</strong> Utilisez la commande <code>vlan [numéro-du-vlan]</code> pour créer un nouveau VLAN. Remplacez <code>[numéro-du-vlan]</code> par le numéro du VLAN que vous souhaitez créer (par exemple, 10).</p>
+<p><strong>Création d'un VLAN :</strong> Nous avons créé un nouveau VLAN en utilisant la commande <code>vlan [numéro-du-vlan]</code>. nous avons  remplacé <code>[numéro-du-vlan]</code> par le numéro du VLAN que je souhaitais créer ici ce sera le vlan 230.</p>
+</li>
+</ol>
+<p><code>switch# configure terminal
+   /
+   switch(config)# vlan 230</code></p>
+<ol>
+<li><strong>Nommer le VLAN (facultatif) :</strong> Nous modifirons également le nom du vlan par celui donné en annexe (ici ce sera Management)</li>
+</ol>
+<p><code>switch(config-vlan)# name Management</code></p>
+<ol>
+<li>
+<p><strong>Affectation des ports au VLAN :</strong> Pour attribuer des ports spécifiques à ce VLAN, on utilisera la commande <code>int gi1/0/1</code>pour l'interface Gigabyte du switch 1 et port 1 et aprés nous utiliserons la commande <code>switchport access vlan 230</code>.</p>
+</li>
+<li>
+<p><strong>Sortie et enregistrement de la configuration :</strong> Pour quitter le mode de configuration, nous utiliserons la commande <code>exit</code> pour revenir au niveau de configuration global, puis on a sauvegardé la configuration en utilisant la commande <code>write memory</code>.</p>
+</li>
+<li>
+<p><strong>Vérification de la configuration :</strong> Après avoir créé les VLANs et attribué les ports, nous avons vérifié la configuration en utilisant la commande <code>show vlan</code> pour afficher la liste des VLANs créés et <code>show interfaces status</code> pour voir quels ports sont affectés à chaque VLAN.</p>
+</li>
+<li>
+<p><strong>Enregistrement de la configuration :</strong> Nous avons enregistrer la memoire afin que la config soit toujours dispo aprés une coupure d'electricité  <code>write memory</code>.</p>
 </li>
 </ol></p>
     </article>
