@@ -67,6 +67,7 @@ Laissant ainsi à l'entreprise de la place pour se développer et intégrer de n
 
 | Nom Hôte | @IP | CIDR | Passerelle    | DNS | Port assigné |
 |----------|-----|--------|---------------|-----|--------------|
+| Utilisateur Test | DHCP (.85.0) | /24 | 172.28.85.254 | 172.28.65.1 | GigabitEthernet#/#/#
 
 ## VLAN 236
 
