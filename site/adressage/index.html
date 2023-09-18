@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-        <title>Plan d'adressage du réseau - Documentation Projet 2024 SIO2</title>
+        <title>Plan d'adressage - Documentation Projet 2024 SIO2</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -69,18 +69,55 @@
                 </a>
             </li>
             <li class="drac-box">
-                <a href="./"
-                    class=" active 
-                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
-                    Plan d'adressage du réseau
-                </a>
-            </li>
-            <li class="drac-box">
                 <a href="../commande_md/"
                     class="
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     Commande md
                 </a>
+            </li>
+            <li class="drac-box">
+                <a href=".."
+                    class=" active 
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#configuration-collapse" aria-expanded="false">
+                    Configuration
+                </a>
+                <div class="collapse" id="configuration-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="./"
+            class=" active 
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Plan d'adressage
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../vlan/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Création d'un vlan
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../ssh/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Activation de SSH
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../config_dns_local/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Installation DNS
+        </a>
+    </li>
+                    </ul>
+                </div>
             </li>
         </ul>
         <!-- endblock -->
@@ -110,13 +147,13 @@
         <div class="container">
             <div class="row row-preview">
                 <div class="col">
-                    <a href=".."
+                    <a href="../commande_md/"
                         class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </div>
                 <div class="col">
-                    <a href="../commande_md/"
+                    <a href="../vlan/"
                         class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
@@ -285,6 +322,22 @@
 <td></td>
 <td></td>
 <td>GigabitEthernet 1/0/1</td>
+</tr>
+<tr>
+<td>Serveur DNS DMZ</td>
+<td>172.28.64.20</td>
+<td>/24</td>
+<td></td>
+<td></td>
+<td>GigabitEthernet#/#/#</td>
+</tr>
+<tr>
+<td>Serveur DNS local</td>
+<td>172.28.64.10</td>
+<td>/24</td>
+<td></td>
+<td></td>
+<td>GigabitEthernet#/#/#</td>
 </tr>
 </tbody>
 </table>
