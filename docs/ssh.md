@@ -1,7 +1,7 @@
 # Compte Rendu de l'Activation du SSH sur un Cisco Catalyst 3750-X
 
 Il nous a été demandé d'activer le service ssh afin de pouvoir administrer le switch à distance et de pouvoir eviter d'utiliser le cable série et d'avoir toujours un moyen d'administrer le switch
-![Image d'un catalyst 3750-X](img\catalyst.avif)
+![Image d'un catalyst 3750-X](./img/catalyst.avif)
 ## Étapes :
 
 1. **Connexion à la console :** Pour accéder au commutateur, j'ai utilisé un câble de console série et un programme de terminal série, tel que PuTTY sur mon ordinateur.
@@ -25,4 +25,4 @@ Il nous a été demandé d'activer le service ssh afin de pouvoir administrer le
 8. **Enregistrement de la configuration :** Enfin, j'ai enregistré la configuration en utilisant la commande `write memory` pour m'assurer que les changements étaient persistants, même en cas de redémarrage du commutateur.
 
 Après avoir suivi ces étapes, le service SSH était activé avec succès sur le Switch que nous avons pu verifier avec putty 
-![switch](img\putty.png)
+![switch](./img/putty.png)
