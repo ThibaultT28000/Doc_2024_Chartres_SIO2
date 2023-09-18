@@ -7,7 +7,7 @@ Dû à la taille de l'entreprise, nous avons décidé d'utiliser comme masque de
 Laissant ainsi à l'entreprise de la place pour se développer et intégrer de nouveaux sites à son infrastructure.
 </br>
 
-![Image du switch](img\adressage.png)
+![Image du switch](./img/adressage.png)
 
 ## **Réseau de Chartres**
 
