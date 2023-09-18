@@ -28,5 +28,5 @@ Voici comment créer des VLANs (Virtual LANs) sur un switch Cisco Catalyst 3750-
 
 8. **Vérification de la configuration :** Après avoir créé les VLANs et attribué les ports, nous avons vérifié la configuration en utilisant la commande `show vlan` pour afficher la liste des VLANs créés et `show interfaces status` pour voir quels ports sont affectés à chaque VLAN.
 
-9. **Enregistrement de la configuration :** Nous avons enregistrer la memoire afin que la config soit toujours dispo aprés une coupure d'electricité  `write memory`.
+9. **Enregistrement de la configuration :** Nous avons enregistrer la memoire pour m'assurer que les changements étaient persistants, même en cas de redémarrage du Switch.
 
