@@ -10,3 +10,4 @@ nav:
     - Création d'un vlan: vlan.md 
     - Activation de SSH: ssh.md
     - Installation DNS: config_dns_local.md
+    - Installation DHCP: config_dhcp_local.md
