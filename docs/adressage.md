@@ -23,23 +23,23 @@ Laissant ainsi à l'entreprise de la place pour se développer et intégrer de n
 |----|----------|--------|----------------|----------------------|
 | Management | 172.28.64.0 | 172.28.64.255 | /24 | 230
 | SRV | 172.28.65.0 | 172.28.65.255 | /24 | 231
-|  | 172.28..0 | 172.28..255 | /24 | 232
-|  | 172.28..0 | 172.28..255 | /24 | 233
+| firewall | 172.28.70.0 | 172.28.70.255 | /24 | 232
+| AcInternet | 172.28.71.0 | 172.28.71.255 | /24 | 233
 | DMZ | 192.168.28.0 | 192.168.28.255 | /24 | 234
 | Utilisateurs | 172.28.85.0 | 172.28.85.255 | /24 | 235
-|  | 172.28..0 | 172.28..255 | /24 | 236
-|  | 172.28..0 | 172.28..255 | /24 | 237
-|  | 172.28..0 | 172.28..255 | /24 | 238
-|  | 172.28..0 | 172.28..255 | /24 | 239
+| /// | 172.28..0 | 172.28..255 | /24 | 236
+| /// | 172.28..0 | 172.28..255 | /24 | 237
+| /// | 172.28..0 | 172.28..255 | /24 | 238
+| /// | 172.28..0 | 172.28..255 | /24 | 239
 
 ## VLAN 230 (Management / Administration)
 
-| Nom Hôte | @IP | CIDR | Passerelle    | DNS | Port assigné |
-|----------|-----|--------|---------------|-----|--------------|
-| Switch   | 172.28.64.254  | /24 |     | | GigabitEthernet 1/0/2         
-| Hôte Management | 172.28.64.2  | /24 |  |  | GigabitEthernet 1/0/1
-| CHA-DMZ | 172.28.64.20 | /24 |  |  | GigabitEthernet #/#/#
-| SRV | 172.28.64.10 | /24 |  |  | GigabitEthernet #/#/#
+| Nom Hôte | @IP | Port assigné |
+|----------|-----|--------------|
+| Switch   | 172.28.64.254      | GigabitEthernet 1/0/2         
+| Hôte Management | 172.28.64.1 | GigabitEthernet 1/0/1
+| CHA-DMZ | 172.28.64.20 | GigabitEthernet #/#/#
+| SRV | 172.28.64.10  | GigabitEthernet #/#/#
 
 ## VLAN 231 (Serveurs Locaux)
 
@@ -49,45 +49,51 @@ Laissant ainsi à l'entreprise de la place pour se développer et intégrer de n
 
 ## VLAN 232
 
-| Nom Hôte | @IP | CIDR | Passerelle    | DNS | Port assigné |
-|----------|-----|--------|---------------|-----|--------------|
+| Nom Hôte | @IP               | Passerelle    | DNS       | Port assigné          |
+|----------|-------------------|---------------|-----------|-----------------------|
+| Switch   | 172.28.70.254     | 172.28.70.254 | 127.0.0.1 | GigabitEthernet 1/0/9
+| stormshield | 172.28.70.1 | 172.28.70.254 | 127.0.0.1 | GigabitEthernet 1/0/10
+|  | 172.28.70.# | 172.28.70.254 | 127.0.0.1 | GigabitEthernet 1/0/#
 
 ## VLAN 233
 
-| Nom Hôte | @IP | CIDR | Passerelle    | DNS | Port assigné |
-|----------|-----|--------|---------------|-----|--------------|
+| Nom Hôte | @IP | Passerelle    | DNS | Port assigné |
+|----------|-----|---------------|-----|--------------|
+| Switch | 172.28.71.254 | 172.28.65.254 | 127.0.0.1 | GigabitEthernet 1/0/15
+|  | 172.28.71.1 | 172.28.71.254 | 127.0.0.1 | GigabitEthernet 1/0/#
+|  | 172.28.65.1 | 172.28.71.254 | 127.0.0.1 | GigabitEthernet 1/0/#
 
 ## VLAN 234 (DMZ)
 
-| Nom Hôte | @IP | CIDR | Passerelle    | DNS | Port assigné |
-|----------|-----|--------|---------------|-----|--------------|
-| CHA-DMZ      | 192.168.28.1 | /24 |   | 127.0.0.1 | GigabitEthernet 1/0/3
+| Nom Hôte | @IP | Passerelle    | DNS | Port assigné |
+|----------|-----|---------------|-----|--------------|
+| CHA-DMZ  | 192.168.28.1 | 192.168.28.254 | 127.0.0.1 | GigabitEthernet 1/0/3
 
 ## VLAN 235
 
-| Nom Hôte | @IP | CIDR | Passerelle    | DNS | Port assigné |
-|----------|-----|--------|---------------|-----|--------------|
-| Utilisateur Test | DHCP (.85.0) | /24 | 172.28.85.254 | 172.28.65.1 | GigabitEthernet 1/0/13
+| Nom Hôte | @IP | Passerelle    | DNS | Port assigné |
+|----------|-----|---------------|-----|--------------|
+| Utilisateur Test | DHCP (.85.0) | 172.28.85.254 | 172.28.65.1 | GigabitEthernet 1/0/13
 
 ## VLAN 236
 
-| Nom Hôte | @IP | CIDR | Passerelle    | DNS | Port assigné |
-|----------|-----|--------|---------------|-----|--------------|
+| Nom Hôte | @IP | Passerelle    | DNS | Port assigné |
+|----------|-----|---------------|-----|--------------|
 
 ## VLAN 237
 
-| Nom Hôte | @IP | CIDR | Passerelle    | DNS | Port assigné |
-|----------|-----|--------|---------------|-----|--------------|
+| Nom Hôte | @IP | Passerelle    | DNS | Port assigné |
+|----------|-----|---------------|-----|--------------|
 
 ## VLAN 238
 
-| Nom Hôte | @IP | CIDR | Passerelle    | DNS | Port assigné |
-|----------|-----|--------|---------------|-----|--------------|
+| Nom Hôte | @IP | Passerelle    | DNS | Port assigné |
+|----------|-----|---------------|-----|--------------|
 
 ## VLAN 239
 
-| Nom Hôte | @IP | CIDR | Passerelle    | DNS | Port assigné |
-|----------|-----|--------|---------------|-----|--------------|
+| Nom Hôte | @IP | Passerelle    | DNS | Port assigné |
+|----------|-----|---------------|-----|--------------|
 
 ## DNS
 
