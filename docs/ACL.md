@@ -1,12 +1,12 @@
 # **Liste des ACL misent en place**
 
-ACL : Access control liste. Les ACL permette de filtré les entrée et sortie.
+ACL : Access control list. Les ACL permettent de filtrer les entrées et sorties.
 
 ### Commande utiliser 
-après la connection au switch `enable` et `conf t` <br>
-utilisation de la commande `access-list 100 permit tcp any any eq 22` 
+Après la connection au switch , passer en mode admin avec `enable` et en mode config avec `conf t` <br>
+nous utilisons la commande`access-list 100 permit tcp any any eq 22` 
 puis `access-list 100 deny ip any any`
-pour definir l'ACL 100 qui empéchera toute communication sauf le ssh.
+pour définir l'ACL 100 qui empéchera toute communication sauf le ssh.
 On configure le vlan 230 `int vlan 230`
 et on lui atribue l'ACL 100 avec `ip access-group 100 in`
 
