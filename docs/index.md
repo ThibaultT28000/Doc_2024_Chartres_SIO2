@@ -2,12 +2,12 @@
 
 <!For full documentation visit [mkdocs.org](https://www.mkdocs.org).>
 
-## Préseantation du projet
-Le projet consiste à répondre à la demande de création d'un réseau informatique pour l'entreprise SportLudique. L'entreprise possède 4 sites actuellement : le siège social situé à Chartres puis 3 autres sites : Celui d'Orléans, de Tours et pour finir Chateauroux. 
+## Présentation du projet
+Le projet consiste à répondre à la demande de création d'une infrastructure réseau pour l'entreprise SportLudique, une entreprise spécialisée dans la conception et la fabrication d’articles de sports et de loisirs. L'entreprise possède 4 sites actuellement : le siège social, situé à Chartres ainsi que 3 autres sites situés à Orléans, Tours et pour finir, Chateauroux. 
 
-### Objectif du projet 
+### Objectifs du projet 
 
 * Développer une infrastructure réseau
 * Travailler en équipe 
-* Réaliser une documentation détailler 
-* Administré un réseau pour qu'il corresponde au attente d'un client
+* Réaliser une documentation détaillée
+* Administrer un réseau pour qu'il corresponde aux attentes d'un client
