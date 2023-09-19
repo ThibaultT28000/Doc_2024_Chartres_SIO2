@@ -22,11 +22,11 @@ Laissant ainsi à l'entreprise de la place pour se développer et intégrer de n
 | Nom Vlan | @Réseau | @Diffusion | CIDR |  VLANs assignés |
 |----|----------|--------|----------------|----------------------|
 | Management | 172.28.64.0 | 172.28.64.255 | /24 | 230
-| Serveurs Locaux | 172.28..0 | 172.28..255 | /24 | 231
+| SRV | 172.28.65.0 | 172.28.65.255 | /24 | 231
 |  | 172.28..0 | 172.28..255 | /24 | 232
 |  | 172.28..0 | 172.28..255 | /24 | 233
 | DMZ | 192.168.28.0 | 192.168.28.255 | /24 | 234
-|  | 172.28..0 | 172.28..255 | /24 | 235
+| Utilisateurs | 172.28.85.0 | 172.28.85.255 | /24 | 235
 |  | 172.28..0 | 172.28..255 | /24 | 236
 |  | 172.28..0 | 172.28..255 | /24 | 237
 |  | 172.28..0 | 172.28..255 | /24 | 238
@@ -36,16 +36,16 @@ Laissant ainsi à l'entreprise de la place pour se développer et intégrer de n
 
 | Nom Hôte | @IP | CIDR | Passerelle    | DNS | Port assigné |
 |----------|-----|--------|---------------|-----|--------------|
-| Switch   | 172.28.64.254  | /24 |     | | GigabitEthernet 1/0/1         
-| Hôte Management | 172.28.64.2  | /24 |  |  | GigabitEthernet 1/0/
-| CHA-DNS-DMZ | 172.28.64.20 | /24 |  |  | GigabitEthernet#/#/#
-| CHA-DNS-local | 172.28.64.10 | /24 |  |  | GigabitEthernet#/#/#
+| Switch   | 172.28.64.254  | /24 |     | | GigabitEthernet 1/0/2         
+| Hôte Management | 172.28.64.2  | /24 |  |  | GigabitEthernet 1/0/1
+| CHA-DMZ | 172.28.64.20 | /24 |  |  | GigabitEthernet #/#/#
+| SRV | 172.28.64.10 | /24 |  |  | GigabitEthernet #/#/#
 
 ## VLAN 231 (Serveurs Locaux)
 
 | Nom Hôte | @IP | Passerelle| DNS | Port assigné |
 |----------|-----|--------|---------------|-----|
-| CHA-DNS-local | 172.28.65.1 | 172.28.65.254 | 127.0.0.1 | GigabitEthernet#/#/#
+| SRV | 172.28.65.1 | 172.28.65.254 | 127.0.0.1 | GigabitEthernet 1/0/21
 
 ## VLAN 232
 
@@ -61,13 +61,13 @@ Laissant ainsi à l'entreprise de la place pour se développer et intégrer de n
 
 | Nom Hôte | @IP | CIDR | Passerelle    | DNS | Port assigné |
 |----------|-----|--------|---------------|-----|--------------|
-| CHA-DNS-DMZ      | 192.168.28.1 | /24 |   | 127.0.0.1 | GigabitEthernet#/#/#
+| CHA-DMZ      | 192.168.28.1 | /24 |   | 127.0.0.1 | GigabitEthernet 1/0/3
 
 ## VLAN 235
 
 | Nom Hôte | @IP | CIDR | Passerelle    | DNS | Port assigné |
 |----------|-----|--------|---------------|-----|--------------|
-| Utilisateur Test | DHCP (.85.0) | /24 | 172.28.85.254 | 172.28.65.1 | GigabitEthernet#/#/#
+| Utilisateur Test | DHCP (.85.0) | /24 | 172.28.85.254 | 172.28.65.1 | GigabitEthernet 1/0/13
 
 ## VLAN 236
 
