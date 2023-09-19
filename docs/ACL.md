@@ -2,7 +2,7 @@
 
 ACL : Access control list. Les ACL permettent de filtrer les entrées et sorties.
 
-### Commande utiliser 
+### Comment utiliser les ACL 
 Après la connection au switch , passer en mode admin avec `enable` et en mode config avec `conf t` <br>
 nous utilisons la commande`access-list 100 permit tcp any any eq 22` 
 puis `access-list 100 deny ip any any`
