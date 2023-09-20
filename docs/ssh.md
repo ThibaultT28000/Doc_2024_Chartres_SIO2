@@ -11,11 +11,12 @@ Il nous a été demandé d'activer le service ssh afin de pouvoir administrer le
 
 3. **Configuration du nom d'hôte :** J'ai configuré le nom d'hôte du switch en utilisant la commande `hostname SW-CHA`. Cela m'a permis d'identifier clairement le Switch dans le réseau.
 
-4. **Génération des clés SSH :** Pour activer le service SSH, j'ai généré les clés SSH en utilisant la commande `crypto key generate rsa`. J'ai spécifié la taille de la clé (ici 2048 bits mais 1024 suffisait)
+4. **Génération des clés SSH :** Pour activer le service SSH, j'ai généré les clés SSH en utilisant la commande`conf t` puis `crypto key generate rsa`. J'ai spécifié la taille de la clé (ici 2048 bits mais 1024 suffisait)
 
 5. **Configuration des paramètres SSH :** Ensuite, j'ai configuré les paramètres SSH en utilisant la commande `ip ssh version 2` pour activer la version 2 du protocole SSH, qui est plus sécurisée que la version 1. J'ai également défini les options de sécurité appropriées, telles que le timeout de connexion SSH , et également desactivé la connexion avec telnet qui n'est plus sécurisé donc une faille potentielle activable avec la commande suivante en configure terminal
 `line vty 0 4`
 `transport input ssh`
+`login local`
 
 6. **Identification :** Ensuite il faut donc ajouter un utilisateur qui sera `admin` et son mot de passe `P@ssw0rd123456!` grâce à la commande suivante:  username `admin` password `P@ssw0rd123456!` .
 
