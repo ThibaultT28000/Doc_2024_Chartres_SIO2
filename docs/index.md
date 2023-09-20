@@ -11,12 +11,12 @@ Le projet consiste à répondre à la demande de création d'une infrastructure 
 
 ### Accès Rapide:
 
-[Plan d'adressage](/adressage)
+[Plan d'adressage](./adressage)
 
-[Création VLAN](/vlan)
+[Création VLAN](./vlan)
 
-[Installation SSH](/ssh)
+[Installation SSH](./ssh)
 
-[Installation](/DHCP)
+[Installation DHCP](./DHCP)
 
-[Page ACL](/ACL)
+[Page ACL](./ACL)
