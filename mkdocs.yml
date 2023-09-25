@@ -12,3 +12,4 @@ nav:
     - Installation DNS: config_dns_local.md
     - Installation DHCP: config_dhcp_local.md
     - Access Control List: ACL.md
+    - Firewall physique: firewall.md
