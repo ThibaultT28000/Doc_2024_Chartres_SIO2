@@ -51,17 +51,18 @@ Laissant ainsi à l'entreprise de la place pour se développer et intégrer de n
 
 | Nom Hôte | @IP               | Passerelle    | DNS       | Port assigné          |
 |----------|-------------------|---------------|-----------|-----------------------|
-|  | 172.28..254     | 172.28..254 | 127.0.0.1 | GigabitEthernet 1/0/
-|  | 172.28..1 | 172.28..254 | 127.0.0.1 | GigabitEthernet 1/0/
-|  | 172.28..# | 172.28..254 | 127.0.0.1 | GigabitEthernet 1/0/#
+|  | 172.28..254     | 172.28..254 |  | GigabitEthernet 1/0/
+|  | 172.28..1 | 172.28..254 |  | GigabitEthernet 1/0/
+|  | 172.28..# | 172.28..254 |  | GigabitEthernet 1/0/#
 
 ## VLAN 233
 
 | Nom Hôte | @IP | Passerelle    | DNS | Port assigné |
 |----------|-----|---------------|-----|--------------|
-| Switch | 172.28.71.254 | 172.28.65.254 | 127.0.0.1 | GigabitEthernet 1/0/15
-|  | 172.28.71.1 | 172.28.71.254 | 127.0.0.1 | GigabitEthernet 1/0/#
-|  | 172.28.65.1 | 172.28.71.254 | 127.0.0.1 | GigabitEthernet 1/0/#
+| Switch | 172.28.71.254 | 172.28.65.254 |  | GigabitEthernet 1/0/15
+| Machine test | 172.28.71.10 | 172.28.71.253 |  | GigabitEthernet 1/0/#
+|  | 172.28.65.1 | 172.28.71.254 |  | GigabitEthernet 1/0/#
+| Routeur | 172.28.71.253| Aucune | /// 
 
 ## VLAN 234 (DMZ)
 
@@ -80,16 +81,16 @@ Laissant ainsi à l'entreprise de la place pour se développer et intégrer de n
 | Nom Hôte | @IP               | Passerelle    | DNS       | Port assigné          |
 |----------|-------------------|---------------|-----------|-----------------------|
 | Switch   | 172.28..254     | 172.28..254 | 127.0.0.1 | GigabitEthernet 1/0/
-|  | 172.28..1 | 172.28..254 | 127.0.0.1 | GigabitEthernet 1/0/
-|  | 172.28.70.# | 172.28.70.254 | 127.0.0.1 | GigabitEthernet 1/0/#
+|  | 172.28..1 | 172.28..254 |  | GigabitEthernet 1/0/
+|  | 172.28.70.# | 172.28.70.254 |  | GigabitEthernet 1/0/#
 
 ## VLAN 237
 
 | Nom Hôte | @IP               | Passerelle    | DNS       | Port assigné          |
 |----------|-------------------|---------------|-----------|-----------------------|
-| Switch   | 172.28.70.254     | 172.28.70.254 | 127.0.0.1 | GigabitEthernet 1/0/9
-| stormshield | 172.28.70.253 | 172.28.70.254 | 127.0.0.1 | GigabitEthernet 1/0/10
-|  | 172.28.70.# | 172.28.70.254 | 127.0.0.1 | GigabitEthernet 1/0/#
+| Switch   | 172.28.70.254     |  |  | GigabitEthernet 1/0/9
+| stormshield | 172.28.70.253 |  |  | GigabitEthernet 1/0/10
+|  | 172.28.70.# | 172.28.70.254 |  | GigabitEthernet 1/0/#
 
 ## VLAN 238
 
@@ -101,6 +102,9 @@ Laissant ainsi à l'entreprise de la place pour se développer et intégrer de n
 | Nom Hôte | @IP | Passerelle    | DNS | Port assigné |
 |----------|-----|---------------|-----|--------------|
 
-## DNS
+## ROUTEUR
 
-nom de domaine réseau privé : local.chartres.sportludique.fr
+| Nom Port | @IP | Masque |
+|----------|-----|--------|
+| GigabitEthernet 0/0 | 172.28.71.253 | 255.255.255.0 |
+| GigabitEthernet 0/1 | 183.44.28.1   | 255.255.255.252 |
