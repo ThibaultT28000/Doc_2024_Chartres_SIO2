@@ -28,7 +28,7 @@ Laissant ainsi à l'entreprise de la place pour se développer et intégrer de n
 | Utilisateurs | 172.28.85.0 | 172.28.85.255 | /24 | 235
 | firewall | 172.28.70.0 | 172.28.70.255 | /24 | 237
 
-## VLAN 230 (Management / Administration)
+## VLAN 230 Management
 
 | Nom Hôte | @IP |
 |----------|-----|
@@ -38,14 +38,14 @@ Laissant ainsi à l'entreprise de la place pour se développer et intégrer de n
 | SRV | 172.28.64.100
 | R1-CHA | 172.28.64.10  
 | R2-CHA| 172.28.64.20 
- 
+
 </br>
 Interface disponible pour le `Management` : ` Gi 1/0/1 à 1/0/4 ` Et ` Gi 2/0/1 à 1/0/4 ` 
 </br>
 
 
 
-## VLAN 231 (Serveurs Locaux)
+## VLAN 231 Serveurs Locaux
 
 | Nom Hôte | @IP | Passerelle|
 |----------|-----|--------|
@@ -55,7 +55,7 @@ Interface disponible pour le `Management` : ` Gi 1/0/1 à 1/0/4 ` Et ` Gi 2/0/1 
 Interface disponible pour le `Serveur` : ` Gi 1/0/23 à 1/0/24 ` Et ` Gi 2/0/23 à 1/0/24 ` 
 </br>
 
-## VLAN 233
+## VLAN 233 AcInternet
 
 | Nom Hôte | @IP |  
 |----------|-----|
@@ -71,7 +71,7 @@ Interface en mode Trunk : ` Gi 1/0/13 ` Et ` Gi 2/0/13 `
 VIP : ` 172.28.71.254 ` 
 
 
-## VLAN 234 (DMZ)
+## VLAN 234 DMZ
 
 | Nom Hôte | @IP | Passerelle    |
 |----------|-----|---------------|
@@ -81,7 +81,7 @@ VIP : ` 172.28.71.254 `
 Interface disponible pour la `DMZ` : ` Gi 1/0/5 à 1/0/8 ` Et ` Gi 2/0/5 à 1/0/8 ` 
 </br>
 
-## VLAN 235
+## VLAN 235 Utilisateur
 
 | Nom Hôte | @IP | Passerelle    | DNS | 
 |----------|-----|---------------|-----|
@@ -91,7 +91,7 @@ Interface disponible pour la `DMZ` : ` Gi 1/0/5 à 1/0/8 ` Et ` Gi 2/0/5 à 1/0/
 Interface disponible pour l' `AcInternet` : ` Gi 1/0/17 à 1/0/18 ` Et ` Gi 2/0/17 à 1/0/18 ` 
 </br>
 
-## VLAN 237
+## VLAN 237 StormShield
 
 | Nom Hôte | @IP               | Passerelle    |  
 |----------|-------------------|---------------|
