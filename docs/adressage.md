@@ -23,83 +23,79 @@ Laissant ainsi à l'entreprise de la place pour se développer et intégrer de n
 |----|----------|--------|----------------|----------------------|
 | Management | 172.28.64.0 | 172.28.64.255 | /24 | 230
 | SRV | 172.28.65.0 | 172.28.65.255 | /24 | 231
-| /// | 172.28..0 | 172.28..255 | /24 | 232
 | AcInternet | 172.28.71.0 | 172.28.71.255 | /24 | 233
 | DMZ | 192.168.28.0 | 192.168.28.255 | /24 | 234
 | Utilisateurs | 172.28.85.0 | 172.28.85.255 | /24 | 235
-| /// | 172.28..0 | 172.28..255 | /24 | 236
 | firewall | 172.28.70.0 | 172.28.70.255 | /24 | 237
-| /// | 172.28..0 | 172.28..255 | /24 | 238
-| /// | 172.28..0 | 172.28..255 | /24 | 239
 
 ## VLAN 230 (Management / Administration)
 
-| Nom Hôte | @IP | Port assigné |
-|----------|-----|--------------|
-| Switch   | 172.28.64.254      | GigabitEthernet 1/0/2         
-| Hôte Management | 172.28.64.1 | GigabitEthernet 1/0/1
-| CHA-DMZ | 172.28.64.20 | GigabitEthernet #/#/#
-| SRV | 172.28.64.10  | GigabitEthernet #/#/#
+| Nom Hôte | @IP |
+|----------|-----|
+| Switch   | 172.28.64.254               
+| Hôte Management | 172.28.64.1 
+| CHA-DMZ | 192.168.28.1 
+| SRV | 172.28.64.100
+| R1-CHA | 172.28.64.10  
+| R2-CHA| 172.28.64.20  
+
+
+Interface disponible pour le `Management` : ` Gi 1/0/1 à 1/0/4 ` Et ` Gi 2/0/1 à 1/0/4 ` 
+</br>
+
+
 
 ## VLAN 231 (Serveurs Locaux)
 
-| Nom Hôte | @IP | Passerelle| DNS | Port assigné |
-|----------|-----|--------|---------------|-----|
-| SRV | 172.28.65.1 | 172.28.65.254 | 127.0.0.1 | GigabitEthernet 1/0/21
+| Nom Hôte | @IP | Passerelle|
+|----------|-----|--------|
+| SRV | 172.28.65.1 | 172.28.65.254 | 
 
-## VLAN 232
-
-| Nom Hôte | @IP               | Passerelle    | DNS       | Port assigné          |
-|----------|-------------------|---------------|-----------|-----------------------|
-|  | 172.28..254     | 172.28..254 | 127.0.0.1 | GigabitEthernet 1/0/
-|  | 172.28..1 | 172.28..254 | 127.0.0.1 | GigabitEthernet 1/0/
-|  | 172.28..# | 172.28..254 | 127.0.0.1 | GigabitEthernet 1/0/#
+Interface disponible pour le `Serveur` : ` Gi 1/0/23 à 1/0/24 ` Et ` Gi 2/0/23 à 1/0/24 ` 
+</br>
 
 ## VLAN 233
 
-| Nom Hôte | @IP | Passerelle    | DNS | Port assigné |
-|----------|-----|---------------|-----|--------------|
-| Switch | 172.28.71.254 | 172.28.65.254 | 127.0.0.1 | GigabitEthernet 1/0/15
-|  | 172.28.71.1 | 172.28.71.254 | 127.0.0.1 | GigabitEthernet 1/0/#
-|  | 172.28.65.1 | 172.28.71.254 | 127.0.0.1 | GigabitEthernet 1/0/#
+| Nom Hôte | @IP |  
+|----------|-----|
+| Switch | 172.28.71.1 | 
+| R1-CHA | 172.28.71.10 |
+| R2-CHA | 172.28.71.20 | 
+
+Interface disponible pour l' `AcInternet` : ` Gi 1/0/13 à 1/0/16 ` Et ` Gi 2/0/13 à 1/0/16 ` 
+</br>
+Interface en mode Trunk : ` Gi 1/0/13 ` Et ` Gi 2/0/13 `
+</br>
+VIP : ` 172.28.71.254 ` 
+
 
 ## VLAN 234 (DMZ)
 
-| Nom Hôte | @IP | Passerelle    | DNS | Port assigné |
-|----------|-----|---------------|-----|--------------|
-| CHA-DMZ  | 192.168.28.1 | 192.168.28.254 | 127.0.0.1 | GigabitEthernet 1/0/3
+| Nom Hôte | @IP | Passerelle    |
+|----------|-----|---------------|
+| CHA-DMZ  | 192.168.28.1 | 192.168.28.254 |
+
+Interface disponible pour la `DMZ` : ` Gi 1/0/5 à 1/0/8 ` Et ` Gi 2/0/5 à 1/0/8 ` 
+</br>
 
 ## VLAN 235
 
-| Nom Hôte | @IP | Passerelle    | DNS | Port assigné |
-|----------|-----|---------------|-----|--------------|
-| Utilisateur Test | DHCP (.85.0) | 172.28.85.254 | 172.28.65.1 | GigabitEthernet 1/0/13
+| Nom Hôte | @IP | Passerelle    | DNS | 
+|----------|-----|---------------|-----|
+| Utilisateur Test | DHCP (.85.0) | 172.28.85.254 | 172.28.65.1 |
 
-## VLAN 236
-
-| Nom Hôte | @IP               | Passerelle    | DNS       | Port assigné          |
-|----------|-------------------|---------------|-----------|-----------------------|
-| Switch   | 172.28..254     | 172.28..254 | 127.0.0.1 | GigabitEthernet 1/0/
-|  | 172.28..1 | 172.28..254 | 127.0.0.1 | GigabitEthernet 1/0/
-|  | 172.28.70.# | 172.28.70.254 | 127.0.0.1 | GigabitEthernet 1/0/#
+Interface disponible pour l' `AcInternet` : ` Gi 1/0/17 à 1/0/18 ` Et ` Gi 2/0/17 à 1/0/18 ` 
+</br>
 
 ## VLAN 237
 
-| Nom Hôte | @IP               | Passerelle    | DNS       | Port assigné          |
-|----------|-------------------|---------------|-----------|-----------------------|
-| Switch   | 172.28.70.254     | 172.28.70.254 | 127.0.0.1 | GigabitEthernet 1/0/9
-| stormshield | 172.28.70.253 | 172.28.70.254 | 127.0.0.1 | GigabitEthernet 1/0/10
-|  | 172.28.70.# | 172.28.70.254 | 127.0.0.1 | GigabitEthernet 1/0/#
+| Nom Hôte | @IP               | Passerelle    |  
+|----------|-------------------|---------------|
+| Switch   | 172.28.70.254     | 172.28.70.254 |  
+| stormshield | 172.28.70.253 | 172.28.70.254 | 
 
-## VLAN 238
-
-| Nom Hôte | @IP | Passerelle    | DNS | Port assigné |
-|----------|-----|---------------|-----|--------------|
-
-## VLAN 239
-
-| Nom Hôte | @IP | Passerelle    | DNS | Port assigné |
-|----------|-----|---------------|-----|--------------|
+Interface disponible pour l' `StormShield` : ` Gi 1/0/9 à 1/0/12 ` Et ` Gi 2/0/9 à 1/0/12 ` 
+</br>
 
 ## DNS
 
