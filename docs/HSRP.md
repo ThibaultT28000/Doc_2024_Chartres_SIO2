@@ -8,4 +8,5 @@ HSRP (Hot Standby Router Protocol) est un protocole de haute disponibilité qui 
 `standby 1 ip 172.28.71.254` qui definit l'adresse VIP (Virtual IP) HSRP à 172.28.71.254 `standby 1 priority 110` qui definit la priorité du routeur à 110 qui sera superieur a celui de R2 qui est 100 , `standby 1 preempt` permet de reprendre le rôle de base pour R1 donc actif et R2 reviendra a passif.
 
 Et voilà , HSRP est desormais actif et fonctionnel .
-![image de HSRP qui fonctionne](./img/hsrp.png)
+
+![image de HSRP qui fonctionne](./img/hsrp.PNG)
