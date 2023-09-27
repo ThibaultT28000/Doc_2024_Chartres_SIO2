@@ -11,11 +11,20 @@ Laissant ainsi à l'entreprise de la place pour se développer et intégrer de n
 
 ## **Réseau de Chartres**
 
-| Nom de Réseau | @Réseau | @Diffusion | CIDR |
-|---------------|---------|------------|------|
-| Chartres | 172.28.64.0 | 172.28.95.255 | /19
+| Nom de Réseau | @Réseau | @Diffusion | CIDR |      
+|---------------|---------|------------|------|      
+| Chartres | 172.28.64.0 | 172.28.95.255 | /19|
 
-</br>
+
+##routeur
+
+| routeur | @Ip | interface |      
+|---------|---|-----------|      
+| R1-CHA | 172.28.71.10 | Gi 0/0.233|
+| R1-CHA | 172.28.64.10 | Gi 0/0.230|
+| R2-CHA | 172.28.71.20 | Gi 0/0.233|
+| R2-CHA | 172.28.64.20 | Gi 0/0.230|
+
 
 ## VLANs assignés
 
