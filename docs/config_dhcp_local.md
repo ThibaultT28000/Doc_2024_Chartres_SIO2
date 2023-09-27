@@ -7,14 +7,16 @@ Après avoir installé le DNS, il faudra installer un service DHCP pour attribue
 
 ## Ajout du service et création de la plage
 <br>
-Pour commencer, je me suis rendu dans Gestion et Ajout des Rôles et services puis j'ai sélectionné DHCP.
+
+Pour commencer, j'ai ajouté le service DHCP à mon serveur.
+
 <br>
 
 ![Ajout du rôle DHCP](./img/DHCP/ajout_role.PNG)
 
 <br>
 
-Après avoir installé le rôle, il me suffira de me rendre dans la configuration du DHCP et de créer la plage dans l'onglet IPv4. Voici un rappel de la plage que je vais intégrer à mon serveur DHCP :
+Après avoir installé le rôle, je vais créer l'étendue dans les paramètres du serveur DHCP.
 
 <br>
 
@@ -26,7 +28,7 @@ Après avoir installé le rôle, il me suffira de me rendre dans la configuratio
 
 On a décidé d'exclure 10 adresses pour nous permettre d'accéder au réseau privé en cas de panne et ainsi être sûr d'avoir des adresses IP disponibles.
 
-Une fois dans le menu d'ajout de l'étendue, il faudra cliquer sur suivant avant d'atteindre la fenêtre présente ci-dessous (L'erreur d'adresse IP de fin a été corrigée. Bien que cela ne nous aurait pas posé de soucis puisque nous n'avons pas beaucoup de machine et le DHCP va toujours commencer avec 172.28.85.1).
+(L'erreur d'adresse IP de fin a été corrigée. Bien que cela ne nous aurait pas posé de soucis puisque nous n'avons pas beaucoup de machine et le DHCP va toujours commencer avec 172.28.85.1).
 
 ![Configuration de la plage d'adresse](./img/DHCP/config_plage.PNG)
 
@@ -38,8 +40,8 @@ Preuve de la correction réalisée :
 
 <br>
 
-Étant donné que la plupart des menus sont identiques, je compte uniquement ajouter la fenêtre lors de la configuration du routeur.
-Il suffit d'ajouter l'adresse de la passerelle et de cliquer sur le bouton "Ajouter".
+Étant donné que la plupart des menus sont identiques, je compte uniquement ajouter la fenêtre lors de la configuration de la passerelle.
+En ce qui concerne la passerelle, j'utilise l'adresse IP de mon Switch.
 <br>
 
 ![Configuration de l'adresse de passerelle](./img/DHCP/config_gateway.PNG)
@@ -52,14 +54,10 @@ Désormais, il faut vérifier si le serveur a été configuré correctement. On 
 
 ## Test du DHCP sur une machine cliente
 
-Nous avons donc lancé une VM Windows 10 en s'assurant d'être en mode **Réseau privé hôte**. Une fois la VM lancée, on se rend dans les paramètres de celle-ci pour modifier les paramètres IPv4 et mettre l'adresse du serveur DNS (**172.28.65.1**).
+Nous avons donc lancé une VM Windows 10 en s'assurant d'être en mode **Réseau privé hôte**. Une fois la VM lancée, j'ai ajouté le DNS aux paramètres réseau de ma.
 
 ![Modification du Serveur DNS sur la machine.](./img/DHCP/modif_parametres.PNG)
  
-Une fois que c'est fait, on s'est rendu dans le CMD et nous avons éxecuter un ipconfig/release et un /renew avant de refaire un autre ipconfig pour ainsi voir si le serveur DHCP a bel et bien attribué les paramètres au poste.
-
+J'ai ensuite raffraichi avec **`ipconfig/release`** et **`ipconfig/renew`**.
 
 ![Test ipconfig réussi](./img/DHCP/test_DHCP.png)
-
-
-Le poste a bel et bien reçu une adresse IP rentrant dans la plage et en dehors de la plage exclue, le masque et la passerelle sont corrects. L'installation du DHCP est réussie.
