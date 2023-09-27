@@ -51,6 +51,7 @@ Interface disponible pour le `Management` : ` Gi 1/0/1 à 1/0/4 ` Et ` Gi 2/0/1 
 |----------|-----|--------|
 | SRV | 172.28.65.1 | 172.28.65.254 | 
 
+<<<<<<< HEAD
 Interface disponible pour le `Serveur` : ` Gi 1/0/23 à 1/0/24 ` Et ` Gi 2/0/23 à 1/0/24 ` 
 </br>
 
@@ -68,6 +69,24 @@ Interface en mode Trunk : ` Gi 1/0/13 ` Et ` Gi 2/0/13 `
 </br>
 VIP : ` 172.28.71.254 ` 
 
+=======
+## VLAN 232
+
+| Nom Hôte | @IP               | Passerelle    | DNS       | Port assigné          |
+|----------|-------------------|---------------|-----------|-----------------------|
+|  | 172.28..254     | 172.28..254 |  | GigabitEthernet 1/0/
+|  | 172.28..1 | 172.28..254 |  | GigabitEthernet 1/0/
+|  | 172.28..# | 172.28..254 |  | GigabitEthernet 1/0/#
+
+## VLAN 233
+
+| Nom Hôte | @IP | Passerelle    | DNS | Port assigné |
+|----------|-----|---------------|-----|--------------|
+| Switch | 172.28.71.254 | 172.28.65.254 |  | GigabitEthernet 1/0/15
+| Machine test | 172.28.71.10 | 172.28.71.253 |  | GigabitEthernet 1/0/#
+|  | 172.28.65.1 | 172.28.71.254 |  | GigabitEthernet 1/0/#
+| Routeur | 172.28.71.253| Aucune | /// 
+>>>>>>> c50b9a4a4dfc7ea9225cce675e46d87c6d35f63f
 
 ## VLAN 234 (DMZ)
 
@@ -84,6 +103,7 @@ Interface disponible pour la `DMZ` : ` Gi 1/0/5 à 1/0/8 ` Et ` Gi 2/0/5 à 1/0/
 |----------|-----|---------------|-----|
 | Utilisateur Test | DHCP (.85.0) | 172.28.85.254 | 172.28.65.1 |
 
+<<<<<<< HEAD
 Interface disponible pour l' `AcInternet` : ` Gi 1/0/17 à 1/0/18 ` Et ` Gi 2/0/17 à 1/0/18 ` 
 </br>
 
@@ -93,10 +113,30 @@ Interface disponible pour l' `AcInternet` : ` Gi 1/0/17 à 1/0/18 ` Et ` Gi 2/0/
 |----------|-------------------|---------------|
 | Switch   | 172.28.70.254     | 172.28.70.254 |  
 | stormshield | 172.28.70.253 | 172.28.70.254 | 
+=======
+## VLAN 236
+
+| Nom Hôte | @IP               | Passerelle    | DNS       | Port assigné          |
+|----------|-------------------|---------------|-----------|-----------------------|
+| Switch   | 172.28..254     | 172.28..254 | 127.0.0.1 | GigabitEthernet 1/0/
+|  | 172.28..1 | 172.28..254 |  | GigabitEthernet 1/0/
+|  | 172.28.70.# | 172.28.70.254 |  | GigabitEthernet 1/0/#
+
+## VLAN 237
+
+| Nom Hôte | @IP               | Passerelle    | DNS       | Port assigné          |
+|----------|-------------------|---------------|-----------|-----------------------|
+| Switch   | 172.28.70.254     |  |  | GigabitEthernet 1/0/9
+| stormshield | 172.28.70.253 |  |  | GigabitEthernet 1/0/10
+|  | 172.28.70.# | 172.28.70.254 |  | GigabitEthernet 1/0/#
+>>>>>>> c50b9a4a4dfc7ea9225cce675e46d87c6d35f63f
 
 Interface disponible pour l' `StormShield` : ` Gi 1/0/9 à 1/0/12 ` Et ` Gi 2/0/9 à 1/0/12 ` 
 </br>
 
-## DNS
+## ROUTEUR
 
-nom de domaine réseau privé : local.chartres.sportludique.fr
+| Nom Port | @IP | Masque |
+|----------|-----|--------|
+| GigabitEthernet 0/0 | 172.28.71.253 | 255.255.255.0 |
+| GigabitEthernet 0/1 | 183.44.28.1   | 255.255.255.252 |
