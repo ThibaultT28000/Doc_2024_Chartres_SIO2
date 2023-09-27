@@ -13,3 +13,4 @@ nav:
     - Installation DHCP: config_dhcp_local.md
     - Access Control List: ACL.md
     - Firewall physique: firewall.md
+    - HSRP: HSRP.md
