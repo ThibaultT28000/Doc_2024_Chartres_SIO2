@@ -37,9 +37,9 @@ Laissant ainsi à l'entreprise de la place pour se développer et intégrer de n
 | CHA-DMZ | 192.168.28.1 
 | SRV | 172.28.64.100
 | R1-CHA | 172.28.64.10  
-| R2-CHA| 172.28.64.20  
-
-
+| R2-CHA| 172.28.64.20 
+ 
+</br>
 Interface disponible pour le `Management` : ` Gi 1/0/1 à 1/0/4 ` Et ` Gi 2/0/1 à 1/0/4 ` 
 </br>
 
@@ -51,6 +51,7 @@ Interface disponible pour le `Management` : ` Gi 1/0/1 à 1/0/4 ` Et ` Gi 2/0/1 
 |----------|-----|--------|
 | SRV | 172.28.65.1 | 172.28.65.254 | 
 
+</br>
 Interface disponible pour le `Serveur` : ` Gi 1/0/23 à 1/0/24 ` Et ` Gi 2/0/23 à 1/0/24 ` 
 </br>
 
@@ -62,6 +63,7 @@ Interface disponible pour le `Serveur` : ` Gi 1/0/23 à 1/0/24 ` Et ` Gi 2/0/23 
 | R1-CHA | 172.28.71.10 |
 | R2-CHA | 172.28.71.20 | 
 
+</br>
 Interface disponible pour l' `AcInternet` : ` Gi 1/0/13 à 1/0/16 ` Et ` Gi 2/0/13 à 1/0/16 ` 
 </br>
 Interface en mode Trunk : ` Gi 1/0/13 ` Et ` Gi 2/0/13 `
@@ -75,6 +77,7 @@ VIP : ` 172.28.71.254 `
 |----------|-----|---------------|
 | CHA-DMZ  | 192.168.28.1 | 192.168.28.254 |
 
+</br>
 Interface disponible pour la `DMZ` : ` Gi 1/0/5 à 1/0/8 ` Et ` Gi 2/0/5 à 1/0/8 ` 
 </br>
 
@@ -84,6 +87,7 @@ Interface disponible pour la `DMZ` : ` Gi 1/0/5 à 1/0/8 ` Et ` Gi 2/0/5 à 1/0/
 |----------|-----|---------------|-----|
 | Utilisateur Test | DHCP (.85.0) | 172.28.85.254 | 172.28.65.1 |
 
+</br>
 Interface disponible pour l' `AcInternet` : ` Gi 1/0/17 à 1/0/18 ` Et ` Gi 2/0/17 à 1/0/18 ` 
 </br>
 
@@ -94,6 +98,7 @@ Interface disponible pour l' `AcInternet` : ` Gi 1/0/17 à 1/0/18 ` Et ` Gi 2/0/
 | Switch   | 172.28.70.254     | 172.28.70.254 |  
 | stormshield | 172.28.70.253 | 172.28.70.254 | 
 
+</br>
 Interface disponible pour l' `StormShield` : ` Gi 1/0/9 à 1/0/12 ` Et ` Gi 2/0/9 à 1/0/12 ` 
 </br>
 
