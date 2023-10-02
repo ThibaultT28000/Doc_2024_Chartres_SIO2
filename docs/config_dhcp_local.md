@@ -27,13 +27,7 @@ On a décidé d'exclure 10 adresses pour nous permettre d'accéder au réseau pr
 
 <br>
 
-Étant donné que la plupart des menus sont identiques, je compte uniquement ajouter la fenêtre lors de la configuration de la passerelle.
-En ce qui concerne la passerelle, j'utilise l'adresse IP de mon Switch.
-<br>
-
-![Configuration de l'adresse de passerelle](./img/DHCP/config_gateway.PNG)
-
-Il suffira ensuite de continuer la configuration en respectant les paramètres ayant été mis en place auparavant, dans le tableau en haut de la page.
+Configuration sur le DHCP :
 
 ![Toutes les configurations apportées](./img/DHCP/config_resultats.PNG)
 
