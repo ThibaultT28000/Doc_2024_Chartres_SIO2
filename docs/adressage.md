@@ -1,4 +1,4 @@
-[center] # **Plan d'adressage du réseau**
+# **Plan d'adressage du réseau**
 
 
 ### **Réseau de Chartres**
@@ -112,5 +112,3 @@ Interface disponible pour l' `StormShield` : ` Gi 1/0/9 à 1/0/12 ` Et ` Gi 2/0/
 ### DNS
 
 nom de domaine réseau privé : local.chartres.sportludique.fr
-
-[/center] 
