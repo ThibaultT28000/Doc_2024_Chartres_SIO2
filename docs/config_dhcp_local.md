@@ -27,7 +27,7 @@ On a décidé d'exclure 10 adresses pour nous permettre d'accéder au réseau pr
 
 <br>
 
-Configuration sur le DHCP :
+Configuration des autres paramètres sur le DHCP :
 
 ![Toutes les configurations apportées](./img/DHCP/config_resultats.PNG)
 
