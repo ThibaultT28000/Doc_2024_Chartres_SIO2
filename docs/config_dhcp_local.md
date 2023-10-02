@@ -5,7 +5,7 @@
 Après avoir installé le DNS, il faudra installer un service DHCP pour attribuer des adresses aux hôtes présents dans le réseau. Notamment ceux du VLAN 235 (Utilisateurs locaux du serveur privé) qui n'ont aucun serveur dans leur VLAN. Il faudra donc créer une plage s'adaptant au réseau que l'on a attribué à ce VLAN.
 <br>
 
-## Création de la plage
+## Création de l'étendue
 
 <br>
 
@@ -19,15 +19,13 @@ Après avoir installé le rôle, je vais créer l'étendue dans les paramètres 
 
 <br>
 
-On a décidé d'exclure 10 adresses pour nous permettre d'accéder au réseau privé en cas de panne et ainsi être sûr d'avoir des adresses IP disponibles.
-
+Plage d'adresse mise en place :
 <br>
 
 ![Plage d'adresses exclues](./img/DHCP/plage_exclue.PNG)
-
 <br>
 
-Configuration des autres paramètres sur le DHCP :
+Configuration des autres paramètres sur l'étendue DHCP :
 
 ![Toutes les configurations apportées](./img/DHCP/config_resultats.PNG)
 
