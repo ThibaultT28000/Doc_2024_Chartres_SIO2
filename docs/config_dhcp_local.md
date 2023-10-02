@@ -27,6 +27,6 @@ Maintenant, faut tester sur une machine dans le VLAN.
 
 ## Test du DHCP sur une machine cliente
 
-Changement de l'@ IP sur la machine **`ipconfig/release`** et **`ipconfig/renew`** après avoir mis l'adresse du serveur DHCP en tant que DNS.
+Changement de l'@ IP sur la machine **`ipconfig/release`** et **`ipconfig/renew`**.
 
 ![Test ipconfig réussi](./img/DHCP/test_DHCP.png)
