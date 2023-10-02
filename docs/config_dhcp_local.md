@@ -5,13 +5,7 @@
 Après avoir installé le DNS, il faudra installer un service DHCP pour attribuer des adresses aux hôtes présents dans le réseau. Notamment ceux du VLAN 235 (Utilisateurs locaux du serveur privé) qui n'ont aucun serveur dans leur VLAN. Il faudra donc créer une plage s'adaptant au réseau que l'on a attribué à ce VLAN.
 <br>
 
-## Création de l'étendue
-
-<br>
-
-Après avoir installé le rôle, je vais créer l'étendue dans les paramètres du serveur DHCP.
-
-<br>
+## Création de l'étendue DHCP
 
 | @Plage de début | CIDR | @Plage de fin | @Passerelle | @DNS | Plage exclue |
 |-----------------|------|---------------|-------------|------|--------------|
@@ -29,7 +23,7 @@ Configuration des autres paramètres sur l'étendue DHCP :
 
 ![Toutes les configurations apportées](./img/DHCP/config_resultats.PNG)
 
-Désormais, il faut vérifier si le serveur a été configuré correctement. On va devoir réaliser un test sur une machine VirtualBox qui est connectée au VLAN 235 via nos switchs.
+Maintenant, faut tester sur une machine dans le VLAN.
 
 ## Test du DHCP sur une machine cliente
 
