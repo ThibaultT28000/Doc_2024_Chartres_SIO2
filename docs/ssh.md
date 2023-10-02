@@ -1,6 +1,5 @@
-# Activation du SSH sur un Cisco Catalyst 3750-X
+# Activation SSH
 
-![Image d'un catalyst 3750-X](./img/catalyst.avif)
 ## Étapes :
 
 **Configuration du nom d'hôte :** 

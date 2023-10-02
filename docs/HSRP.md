@@ -1,4 +1,4 @@
-# Activation de HSRP sur un Cisco 1950
+# Activation HSRP 
 
 
 ## Étapes :

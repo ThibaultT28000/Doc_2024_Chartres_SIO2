@@ -1,32 +1,25 @@
-# **Plan d'adressage du réseau**
+[center] # **Plan d'adressage du réseau**
 
-L'entièreté des sites est basée sur l'adresse IP **`172.28.0.0 /16`**. 
 
-Dû à la taille de l'entreprise, nous avons décidé d'utiliser comme masque de sous-réseau **`/19`**, permettant d'avoir 8 VLAN disponibles. 
-
-Laissant ainsi à l'entreprise de la place pour se développer et intégrer de nouveaux sites à son infrastructure.
-</br>
-
-![Image du switch](./img/adressage.png)
-
-## **Réseau de Chartres**
+### **Réseau de Chartres**
 
 | Nom de Réseau | @Réseau | @Diffusion | CIDR |      
 |---------------|---------|------------|------|      
 | Chartres | 172.28.64.0 | 172.28.95.255 | /19|
 
 
-##routeur
+### Routeurs
 
 | routeur | @Ip | interface |      
 |---------|---|-----------|      
 | R1-CHA | 172.28.71.10 | Gi 0/0.233|
 | R1-CHA | 172.28.64.10 | Gi 0/0.230|
+| R1-CHA | 221.87.128.1 | Gi 0/1
 | R2-CHA | 172.28.71.20 | Gi 0/0.233|
 | R2-CHA | 172.28.64.20 | Gi 0/0.230|
-
-
-## VLANs assignés
+| R2-CHA | 183.44.28.1  | Gi 0/1
+ 
+# Vlan
 
 | Nom Vlan | @Réseau | @Diffusion | CIDR |  VLANs assignés |
 |----|----------|--------|----------------|----------------------|
@@ -37,7 +30,7 @@ Laissant ainsi à l'entreprise de la place pour se développer et intégrer de n
 | Utilisateurs | 172.28.85.0 | 172.28.85.255 | /24 | 235
 | firewall | 172.28.70.0 | 172.28.70.255 | /24 | 237
 
-## VLAN 230 Management
+### VLAN 230 Management
 
 | Nom Hôte | @IP |
 |----------|-----|
@@ -50,11 +43,11 @@ Laissant ainsi à l'entreprise de la place pour se développer et intégrer de n
 
 </br>
 Interface disponible pour le `Management` : ` Gi 1/0/1 à 1/0/4 ` Et ` Gi 2/0/1 à 1/0/4 ` 
-</br>
 
 
 
-## VLAN 231 Serveurs Locaux
+
+### VLAN 231 Serveurs Locaux
 
 | Nom Hôte | @IP | Passerelle|
 |----------|-----|--------|
@@ -62,9 +55,9 @@ Interface disponible pour le `Management` : ` Gi 1/0/1 à 1/0/4 ` Et ` Gi 2/0/1 
 
 </br>
 Interface disponible pour le `Serveur` : ` Gi 1/0/23 à 1/0/24 ` Et ` Gi 2/0/23 à 1/0/24 ` 
-</br>
 
-## VLAN 233 AcInternet
+
+### VLAN 233 AcInternet
 
 | Nom Hôte | @IP |  
 |----------|-----|
@@ -74,13 +67,15 @@ Interface disponible pour le `Serveur` : ` Gi 1/0/23 à 1/0/24 ` Et ` Gi 2/0/23 
 
 </br>
 Interface disponible pour l' `AcInternet` : ` Gi 1/0/13 à 1/0/16 ` Et ` Gi 2/0/13 à 1/0/16 ` 
-</br>
+
+
 Interface en mode Trunk : ` Gi 1/0/13 ` Et ` Gi 2/0/13 `
-</br>
+
+
 VIP : ` 172.28.71.254 ` 
 
 
-## VLAN 234 DMZ
+### VLAN 234 DMZ
 
 | Nom Hôte | @IP | Passerelle    |
 |----------|-----|---------------|
@@ -88,9 +83,10 @@ VIP : ` 172.28.71.254 `
 
 </br>
 Interface disponible pour la `DMZ` : ` Gi 1/0/5 à 1/0/8 ` Et ` Gi 2/0/5 à 1/0/8 ` 
-</br>
 
-## VLAN 235 Utilisateur
+
+
+### VLAN 235 Utilisateur
 
 | Nom Hôte | @IP | Passerelle    | DNS | 
 |----------|-----|---------------|-----|
@@ -98,19 +94,23 @@ Interface disponible pour la `DMZ` : ` Gi 1/0/5 à 1/0/8 ` Et ` Gi 2/0/5 à 1/0/
 
 </br>
 Interface disponible pour l' `AcInternet` : ` Gi 1/0/17 à 1/0/18 ` Et ` Gi 2/0/17 à 1/0/18 ` 
-</br>
 
-## VLAN 237 StormShield
+
+### VLAN 237 StormShield
 
 | Nom Hôte | @IP               | Passerelle    |  
 |----------|-------------------|---------------|
 | Switch   | 172.28.70.254     | 172.28.70.254 |  
 | stormshield | 172.28.70.253 | 172.28.70.254 | 
 
+
 </br>
 Interface disponible pour l' `StormShield` : ` Gi 1/0/9 à 1/0/12 ` Et ` Gi 2/0/9 à 1/0/12 ` 
-</br>
 
-## DNS
+
+
+### DNS
 
 nom de domaine réseau privé : local.chartres.sportludique.fr
+
+[/center] 
