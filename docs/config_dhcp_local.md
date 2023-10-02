@@ -33,6 +33,6 @@ Désormais, il faut vérifier si le serveur a été configuré correctement. On 
 
 ## Test du DHCP sur une machine cliente
 
-Changement de l'@ IP sur la machine **`ipconfig/release`** et **`ipconfig/renew`** après avoir mis l'adresse du serveur DHCP.
+Changement de l'@ IP sur la machine **`ipconfig/release`** et **`ipconfig/renew`** après avoir mis l'adresse du serveur DHCP en tant que DNS.
 
 ![Test ipconfig réussi](./img/DHCP/test_DHCP.png)
