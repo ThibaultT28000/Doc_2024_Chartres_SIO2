@@ -16,13 +16,22 @@
 
 **Configuration des paramètres SSH :** 
 
+Active la version 2 de ssh
+
 `ip ssh version 2`
 
+Configuration des ligne vty de 0 à 4 qui sont utilisés pour le management a distance
 
 `line vty 0 4`
 
 
+Cette ligne indique que seul le ssh est autorisé pour les connexions distantes 
+
+
 `transport input ssh`
+
+
+Cette ligne indique que l'appareil utilisera les compte locaux pour l'authentification
 
 
 `login local`
