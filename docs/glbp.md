@@ -3,7 +3,7 @@
 
 ## Étapes :
 
-**Configuration de l'interface pour HSRP :**
+**Configuration de l'interface pour GLBP :**
 
 `Gi0/0.233 (notre interface de transport)`
 
