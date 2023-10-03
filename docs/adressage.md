@@ -52,6 +52,7 @@ Interface disponible pour le `Management` : ` Gi 1/0/1 à 1/0/4 ` Et ` Gi 2/0/1 
 | Nom Hôte | @IP | Passerelle|
 |----------|-----|--------|
 | SRV | 172.28.65.1 | 172.28.65.254 | 
+| Switch | 172.28.65.254 | 
 
 </br>
 Interface disponible pour le `Serveur` : ` Gi 1/0/23 à 1/0/24 ` Et ` Gi 2/0/23 à 1/0/24 ` 
@@ -61,8 +62,8 @@ Interface disponible pour le `Serveur` : ` Gi 1/0/23 à 1/0/24 ` Et ` Gi 2/0/23 
 
 | Nom Hôte | @IP |  
 |----------|-----|
-|PFS|172.28.71.254
-| Switch | 172.28.71.1 | 
+|PFS|172.28.71.30
+| VIP | 172.28.71.254 | 
 | R1-CHA | 172.28.71.10 |
 | R2-CHA | 172.28.71.20 |
 
@@ -83,7 +84,6 @@ VIP : ` 172.28.71.254 `
 |----------|-----
 | stormshield  | 192.168.28.1 |
 | PFS  | 192.168.28.254 |
-| switch  | 192.168.28.100 |
 
 </br>
 Interface disponible pour la `DMZ` : ` Gi 1/0/5 à 1/0/8 ` Et ` Gi 2/0/5 à 1/0/8 ` 
