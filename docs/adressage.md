@@ -34,9 +34,9 @@
 
 | Nom Hôte | @IP |
 |----------|-----|
-| Switch   | 172.28.64.254               
-| Hôte Management | 172.28.64.1 
-| CHA-DMZ | 192.168.28.1 
+| Switch   | 172.28.64.1                
+| Stormshield | 172.28.64.154 
+|PFS|172.28.64.254
 | SRV | 172.28.64.100
 | R1-CHA | 172.28.64.10  
 | R2-CHA| 172.28.64.20 
@@ -61,9 +61,11 @@ Interface disponible pour le `Serveur` : ` Gi 1/0/23 à 1/0/24 ` Et ` Gi 2/0/23 
 
 | Nom Hôte | @IP |  
 |----------|-----|
+|PFS|172.28.71.254
 | Switch | 172.28.71.1 | 
 | R1-CHA | 172.28.71.10 |
-| R2-CHA | 172.28.71.20 | 
+| R2-CHA | 172.28.71.20 |
+
 
 </br>
 Interface disponible pour l' `AcInternet` : ` Gi 1/0/13 à 1/0/16 ` Et ` Gi 2/0/13 à 1/0/16 ` 
@@ -77,9 +79,11 @@ VIP : ` 172.28.71.254 `
 
 ### VLAN 234 DMZ
 
-| Nom Hôte | @IP | Passerelle    |
-|----------|-----|---------------|
-| CHA-DMZ  | 192.168.28.1 | 192.168.28.254 |
+| Nom Hôte | @IP 
+|----------|-----
+| stormshield  | 192.168.28.1 |
+| PFS  | 192.168.28.254 |
+| switch  | 192.168.28.100 |
 
 </br>
 Interface disponible pour la `DMZ` : ` Gi 1/0/5 à 1/0/8 ` Et ` Gi 2/0/5 à 1/0/8 ` 
@@ -90,6 +94,7 @@ Interface disponible pour la `DMZ` : ` Gi 1/0/5 à 1/0/8 ` Et ` Gi 2/0/5 à 1/0/
 
 | Nom Hôte | @IP | Passerelle    | DNS | 
 |----------|-----|---------------|-----|
+| Switch | 172.28.85.254 |
 | Utilisateur Test | DHCP (.85.0) | 172.28.85.254 | 172.28.65.1 |
 
 </br>
@@ -100,13 +105,15 @@ Interface disponible pour l' `AcInternet` : ` Gi 1/0/17 à 1/0/18 ` Et ` Gi 2/0/
 
 | Nom Hôte | @IP               | Passerelle    |  
 |----------|-------------------|---------------|
-| Switch   | 172.28.70.254     | 172.28.70.254 |  
+| Switch   | 172.28.70.1     | 172.28.70.1 |  
 | stormshield | 172.28.70.253 | 172.28.70.254 | 
 
 
 </br>
 Interface disponible pour l' `StormShield` : ` Gi 1/0/9 à 1/0/12 ` Et ` Gi 2/0/9 à 1/0/12 ` 
 
+
+Interface en mode Trunk : ` Gi 1/0/9 ` Et ` Gi 2/0/9 `
 
 
 ### DNS

@@ -5,7 +5,7 @@
 
 **Configuration de l'interface pour HSRP :**
 
-`Gi0/0.233 (notre interface de transport)`
+`Gi0/0.233` (notre interface de transport)
 
 
 Definit l'adresse VIP (Virtual IP) HSRP à 172.28.71.254 
