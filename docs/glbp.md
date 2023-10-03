@@ -14,16 +14,6 @@ Definit l'adresse VIP (Virtual IP) GLBP à 172.28.71.254
 `glbp 1 ip 172.28.71.254` 
 
 
-
-
-Definit la priorité du routeur à 110 qui sera superieur a celui de R2 qui est 100
-
-
-`glbp 1 priority 140` 
-
-permet de reprendre le rôle de base pour R1 donc actif et R2 reviendra a passif
-
-
 `glbp 1 preempt` 
 
 Permet de mettre le load-balancing en round-robin
