@@ -13,6 +13,7 @@ nav:
     - DNS: config_dns_local.md
     - SSH: ssh.md
     - GLBP: glbp.md
+    - NAT: Nat.md
     
   - Infra ↳ : 
     - Plan d'adressage: adressage.md

@@ -8,15 +8,3 @@ Le projet consiste à répondre à la demande de création d'une infrastructure 
 * Travailler en équipe 
 * Réaliser une documentation détaillée
 * Administrer un réseau pour qu'il corresponde aux attentes d'un client
-
-### Accès Rapide:
-
-[Plan d'adressage](./adressage)
-
-[Création VLAN](./vlan)
-
-[Installation SSH](./ssh)
-
-[Installation DHCP](./DHCP)
-
-[Page ACL](./ACL)
