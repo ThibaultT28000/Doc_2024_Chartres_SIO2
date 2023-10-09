@@ -7,3 +7,8 @@ Pour la règle de NAT comme port traduit , nous avons donc pris notre interface 
 Nous avons ping avec un ordinateur en 192.168.28.x pour voir si la règle fonctionne,172.28.71.30 etant notre Pfsense et 8.8.8.8 la destination du ping donc notre ip est bien translaté
 
 ![WireShark](./img/PFS/withnat.png)
+
+
+![interfaces](./img/interface_PFS.jpg)
+
+conf 

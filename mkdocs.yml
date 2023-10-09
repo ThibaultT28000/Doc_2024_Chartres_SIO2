@@ -8,6 +8,7 @@ nav:
   - Configuration ↳ : 
     - Access Control List: ACL.md
     - Firewall physique: firewall.md
+    - PFSense: PfSense.md
     - HSRP: HSRP.md
     - DHCP: config_dhcp_local.md
     - DNS: config_dns_local.md

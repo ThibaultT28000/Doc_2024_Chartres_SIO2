@@ -1,3 +1,6 @@
 # Schèma logique du réseau #
 
-![Image du switch](./img/Infra.jpg) 
+![Image du switch](./img/reseau.jpg) 
+
+
+![Management](./img/admin.jpg) 
