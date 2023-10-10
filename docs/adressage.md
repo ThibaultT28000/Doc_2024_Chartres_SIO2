@@ -1,6 +1,9 @@
 # **Plan d'adressage du réseau**
 
 
+La plage d'adresses des serveurs est de X.100 à X.150 sur tout les réseau  
+
+
 ### **Réseau de Chartres**
 
 | Nom de Réseau | @Réseau | @Diffusion | CIDR |      
