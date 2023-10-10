@@ -2,7 +2,7 @@
 # **Plan d'adressage du réseau**
 
 
-La plage d'adresses des serveurs est de X.100 à X.150 sur tout les réseau  
+La plage d'adresses des serveurs est de X.100 à X.150 sur tout les réseau 
 
 
 ### **Réseau de Chartres**
@@ -18,10 +18,10 @@ La plage d'adresses des serveurs est de X.100 à X.150 sur tout les réseau
 |---------|---|-----------|      
 | R1-CHA | 172.28.71.10 | Gi 0/0.233|
 | R1-CHA | 172.28.64.10 | Gi 0/0.230|
-| R1-CHA | 221.87.128.1 | Gi 0/1
+| R1-CHA | 183.44.28.1  | Gi 0/1
 | R2-CHA | 172.28.71.20 | Gi 0/0.233|
 | R2-CHA | 172.28.64.20 | Gi 0/0.230|
-| R2-CHA | 183.44.28.1  | Gi 0/1
+| R2-CHA | 221.87.128.2 | Gi 0/1
  
 # Vlan
 
@@ -42,7 +42,8 @@ La plage d'adresses des serveurs est de X.100 à X.150 sur tout les réseau
 | Stormshield | 172.28.64.154 
 | PFS |172.28.64.254
 | DNS-local | 172.28.64.100
-| DNS-DMZ | 172.28.64.110
+| DNS-DMZ | 172.28.64.110 
+| CHA-SRV-http  | 172.28.64.120 |
 | R1-CHA | 172.28.64.10  
 | R2-CHA| 172.28.64.20 
 
@@ -89,6 +90,9 @@ VIP : ` 172.28.71.254 `
 |----------|-----
 | stormshield  | 192.168.28.1 |
 | PFS  | 192.168.28.254 |
+| DNS  | 192.168.28.110 |
+| CHA-SRV-http  | 192.168.28.120 |
+| DNS-DMZ | 172.28.64.110
 
 </br>
 Interface disponible pour la `DMZ` : ` Gi 1/0/5 à 1/0/8 ` Et ` Gi 2/0/5 à 1/0/8 ` 

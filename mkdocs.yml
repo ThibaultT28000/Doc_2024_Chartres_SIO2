@@ -4,6 +4,8 @@ theme:
   custom_dir: overrides
 nav:
   - index.md
+
+  - Serveur http: SRV-hhtp.md
   - Création d'un vlan: vlan.md 
   - Configuration ↳ : 
     - Access Control List: ACL.md
