@@ -1,3 +1,4 @@
+
 # **Plan d'adressage du réseau**
 
 
@@ -36,8 +37,9 @@
 |----------|-----|
 | Switch   | 172.28.64.1                
 | Stormshield | 172.28.64.154 
-|PFS|172.28.64.254
-| SRV | 172.28.64.100
+| PFS |172.28.64.254
+| DNS-local | 172.28.64.100
+| DNS-DMZ | 172.28.64.110
 | R1-CHA | 172.28.64.10  
 | R2-CHA| 172.28.64.20 
 
@@ -98,7 +100,7 @@ Interface disponible pour la `DMZ` : ` Gi 1/0/5 à 1/0/8 ` Et ` Gi 2/0/5 à 1/0/
 | Utilisateur Test | DHCP (.85.0) | 172.28.85.254 | 172.28.65.1 |
 
 </br>
-Interface disponible pour l' `AcInternet` : ` Gi 1/0/17 à 1/0/18 ` Et ` Gi 2/0/17 à 1/0/18 ` 
+Interface disponible pour l' `Utilisateur` : ` Gi 1/0/17 à 1/0/18 ` Et ` Gi 2/0/17 à 1/0/18 ` 
 
 
 ### VLAN 237 StormShield
