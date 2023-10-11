@@ -6,4 +6,4 @@ CAS 1 : Connexion NAT via le routeur
 CAS 2 : Connexion NAT via le pfSense
 
 ![Image règle NAT ]()
-![Image des deux règles]()
+![Image des deux règles](./img/NAT/regle_pfs.jpg)
