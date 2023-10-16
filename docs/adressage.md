@@ -86,8 +86,8 @@ VIP : ` 172.28.71.254 `
 
 ### VLAN 234 DMZ
 
-| Nom Hôte | @IP 
-|----------|-----
+| Nom Hôte | @IP |
+|----------|-----|
 | stormshield  | 192.168.28.1 |
 | PFS  | 192.168.28.254 |
 | DNS  | 192.168.28.110 |
@@ -95,9 +95,16 @@ VIP : ` 172.28.71.254 `
 | DNS-DMZ | 172.28.64.110
 
 </br>
-Interface disponible pour la `DMZ` : ` Gi 1/0/5 à 1/0/8 ` Et ` Gi 2/0/5 à 1/0/8 ` 
+Interfaces disponibles pour la `DMZ` : ` Gi 1/0/5 à 1/0/8 ` Et ` Gi 2/0/5 à 1/0/8 ` 
 
+</br>
 
+### VIP pfSense
+
+| pfSense | @IP |
+|---------|-----|
+| #1 | 172.16.28.1 |
+| #2 | 172.16.28.254 |
 
 ### VLAN 235 Utilisateur
 
