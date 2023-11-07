@@ -40,7 +40,7 @@ La plage d'adresses des serveurs est de X.100 à X.150 sur tout les réseau
 |----------|-----|
 | Switch   | 172.28.64.1                
 | Stormshield | 172.28.64.154 
-| PFS |172.28.64.254
+| PFSense |172.28.64.155
 | DNS-local | 172.28.64.100
 | DNS-DMZ | 172.28.64.110 
 | CHA-SRV-http  | 172.28.64.120 |
@@ -89,7 +89,7 @@ VIP : ` 172.28.71.254 `
 | Nom Hôte | @IP |
 |----------|-----|
 | stormshield  | 192.168.28.1 |
-| PFS  | 192.168.28.254 |
+| PFSense (CARP)  | 192.168.28.254 |
 | DNS  | 192.168.28.115 |
 | CHA-SRV-http  | 192.168.28.120 |
 
@@ -98,7 +98,7 @@ Interfaces disponibles pour la `DMZ` : ` Gi 1/0/5 à 1/0/8 ` Et ` Gi 2/0/5 à 1/
 
 </br>
 
-### VIP pfSense
+### VIP CARP
 
 | pfSense | @IP |
 |---------|-----|
@@ -133,4 +133,4 @@ Interface en mode Trunk : ` Gi 1/0/9 ` Et ` Gi 2/0/9 `
 
 ### DNS
 
-nom de domaine réseau privé : local.chartres.sportludique.fr
+nom de domaine réseau privé : chartres.sportludique.fr
