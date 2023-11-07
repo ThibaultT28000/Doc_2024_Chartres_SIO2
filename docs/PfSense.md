@@ -11,4 +11,4 @@ Nous avons ping avec un ordinateur en 192.168.28.x pour voir si la règle foncti
 
 ![interfaces](./img/interface_PFS.jpg)
 
-conf 
+[Conf du pfSense ici](./utilitaire/conf-pfSense-Chartres-06-11-23.txt) 
