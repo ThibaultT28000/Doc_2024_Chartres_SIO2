@@ -16,6 +16,7 @@ nav:
     - SSH: ssh.md
     - GLBP: glbp.md
     - NAT: Nat.md
+    - HTTPS: https.md
     - DNS ↳ :
       - Résolver DNS: DNS_DMZ.md
       - Redirecteur DNS: Redirecteur_DNS.md
