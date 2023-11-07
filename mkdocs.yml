@@ -18,13 +18,10 @@ nav:
     - NAT: Nat.md
     - DNS ↳ :
       - Résolver DNS: DNS_DMZ.md
-      - Redirecteur DNS: Resolver_DNS.md
+      - Redirecteur DNS: Redirecteur_DNS.md
       - DNS local: config_dns_local.md
       
       
-      
-  
-    
   - Infra ↳ : 
     - Plan d'adressage: adressage.md
     - Brassage: Brassage.md 
