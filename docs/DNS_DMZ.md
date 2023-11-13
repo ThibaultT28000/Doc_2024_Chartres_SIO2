@@ -76,3 +76,35 @@ Toutes les lignes du fichier `named.conf.default-zones` sont mises `en commentai
     @       IN      NS      ns1.chartres.sportludique.fr.
     ns1     IN      A       192.168.28.115
     www     IN      A       192.168.28.120
+
+
+###named.conf.option###
+
+    options {
+        directory "/var/cache/bind";
+
+        // If there is a firewall between you and nameservers you want
+        // to talk to, you may need to fix the firewall to allow multiple
+        // ports to talk.  See http://www.kb.cert.org/vuls/id/800113
+
+        allow-query { any;};
+
+        // If your ISP provided one or more IP addresses for stable
+        // nameservers, you probably want to use them as forwarders.
+        // Uncomment the following block, and insert the addresses replacing
+        // the all-0's placeholder.
+
+        //forwarders {
+        //      121.183.90.205;
+        // };
+
+        //========================================================================
+        // If BIND logs error messages about the root key being expired,
+        // you will need to update your keys.  See https://www.isc.org/bind-keys
+        //========================================================================
+        
+        dnssec-validation no;
+
+        listen-on-v6 { none; };
+        listen-on { any; };
+    };

@@ -7,15 +7,15 @@ La plage d'adresses des serveurs est de X.100 à X.150 sur tout les réseau
 
 ### **Réseau de Chartres**
 
-| Nom de Réseau | @Réseau | @Diffusion | CIDR |      
-|---------------|---------|------------|------|      
-| Chartres | 172.28.64.0 | 172.28.95.255 | /19|
+| Nom de Réseau | @Réseau     | @Diffusion    | CIDR |      
+|---------------|-------------|---------------|------|      
+| Chartres      | 172.28.64.0 | 172.28.95.255 | /19|
 
 
 ### Routeurs
 
 | routeur | @Ip | interface |      
-|---------|---|-----------|      
+|---------|-----|-----------|      
 | R1-CHA | 172.28.71.10 | Gi 0/0.233|
 | R1-CHA | 172.28.64.10 | Gi 0/0.230|
 | R1-CHA | 183.44.28.1  | Gi 0/1
@@ -25,27 +25,35 @@ La plage d'adresses des serveurs est de X.100 à X.150 sur tout les réseau
  
 # Vlan
 
-| Nom Vlan | @Réseau | @Diffusion | CIDR |  VLANs assignés |
-|----|----------|--------|----------------|----------------------|
-| Management | 172.28.64.0 | 172.28.64.255 | /24 | 230
-| SRV | 172.28.65.0 | 172.28.65.255 | /24 | 231
-| AcInternet | 172.28.71.0 | 172.28.71.255 | /24 | 233
-| DMZ | 192.168.28.0 | 192.168.28.255 | /24 | 234
-| Utilisateurs | 172.28.85.0 | 172.28.85.255 | /24 | 235
-| firewall | 172.28.70.0 | 172.28.70.255 | /24 | 237
+| Nom Vlan     | @Réseau      | @Diffusion     | CIDR |  VLANs assignés |
+|--------------|--------------|----------------|------|-----------------|
+| Management   | 172.28.64.0  | 172.28.64.255  | /24  | 230
+| SRV          | 172.28.65.0  | 172.28.65.255  | /24  | 231
+| AcInternet   | 172.28.71.0  | 172.28.71.255  | /24  | 233
+| DMZ          | 192.168.28.0 | 192.168.28.255 | /24  | 234
+| Utilisateurs | 172.28.85.0  | 172.28.85.255  | /24  | 235
+| firewall     | 172.28.70.0  | 172.28.70.255  | /24  | 237
 
 ### VLAN 230 Management
 
-| Nom Hôte | @IP |
-|----------|-----|
-| Switch   | 172.28.64.1                
-| Stormshield | 172.28.64.154 
-| PFSense |172.28.64.155
-| DNS-local | 172.28.64.100
-| DNS-DMZ | 172.28.64.110 
-| CHA-SRV-http  | 172.28.64.120 |
-| R1-CHA | 172.28.64.10  
-| R2-CHA| 172.28.64.20 
+|    Nom Hôte     |      @IP      |
+|-----------------|---------------|
+| Switch          | 172.28.64.1     
+| R1-CHA          | 172.28.64.10  
+| R2-CHA          | 172.28.64.20   
+| DNS-local       | 172.28.64.100 
+| Redirecteur-DNS | 172.28.64.110 
+| Resolver-DNS    | 172.28.64.115     
+| CHA-SRV-http    | 172.28.64.120  
+| BDD             | 172.28.64.145 
+| Stormshield     | 172.28.64.154 
+| PFSense         | 172.28.64.155
+
+
+
+
+
+
 
 </br>
 Interface disponible pour le `Management` : ` Gi 1/0/1 à 1/0/4 ` Et ` Gi 2/0/1 à 1/0/4 ` 
@@ -56,9 +64,9 @@ Interface disponible pour le `Management` : ` Gi 1/0/1 à 1/0/4 ` Et ` Gi 2/0/1 
 ### VLAN 231 Serveurs Locaux
 
 | Nom Hôte | @IP | Passerelle|
-|----------|-----|--------|
-| SRV | 172.28.65.1 | 172.28.65.254 | 
-| Switch | 172.28.65.254 | 
+|----------|-----|-----------|
+| SRV      | 172.28.65.1 | 172.28.65.254 | 
+| Switch   | 172.28.65.254 | 
 
 </br>
 Interface disponible pour le `Serveur` : ` Gi 1/0/23 à 1/0/24 ` Et ` Gi 2/0/23 à 1/0/24 ` 
@@ -107,10 +115,10 @@ Interfaces disponibles pour la `DMZ` : ` Gi 1/0/5 à 1/0/8 ` Et ` Gi 2/0/5 à 1/
 
 ### VLAN 235 Utilisateur
 
-| Nom Hôte | @IP | Passerelle    | DNS | 
-|----------|-----|---------------|-----|
-| Switch | 172.28.85.254 |
-| Utilisateur Test | DHCP (.85.0) | 172.28.85.254 | 172.28.65.1 |
+| Nom Hôte | @IP | 
+|----------|-----|
+| Switch   | 172.28.85.254 |
+| Utilisateur Test | DHCP (.85.0) |
 
 </br>
 Interface disponible pour l' `Utilisateur` : ` Gi 1/0/17 à 1/0/18 ` Et ` Gi 2/0/17 à 1/0/18 ` 
