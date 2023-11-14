@@ -1,6 +1,8 @@
 # Activation HSRP 
 
 
+"HSRP est la solution active dans notre infrastructure"
+
 ## Étapes :
 
 **Configuration de l'interface pour HSRP :**

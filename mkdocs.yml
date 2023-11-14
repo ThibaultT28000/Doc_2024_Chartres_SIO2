@@ -5,23 +5,31 @@ theme:
 nav:
   - index.md
 
-  - Serveur http: SRV-hhtp.md
-  - Création d'un vlan: vlan.md 
+  
+   
   - Configuration ↳ : 
     - Access Control List: ACL.md
-    - Firewall physique: firewall.md
-    - PFSense: PfSense.md
-    - HSRP: HSRP.md
     - DHCP: config_dhcp_local.md
     - SSH: ssh.md
-    - GLBP: glbp.md
     - NAT: Nat.md
+    - Création d'un vlan: vlan.md
+    
+  - Serveur ↳ :  
+    - Serveur http: SRV-hhtp.md
     - HTTPS: https.md
-    - DNS ↳ :
-      - Résolver DNS: DNS_DMZ.md
-      - Redirecteur DNS: Redirecteur_DNS.md
-      - DNS local: config_dns_local.md
-      
+
+  - Solutions de pare-feu ↳ : 
+    - PFSense: PfSense.md
+    - Firewall physique: firewall.md
+
+  - Redondance ↳ : 
+    - GLBP: glbp.md
+    - HSRP: HSRP.md
+
+  - DNS ↳ :
+    - Résolver DNS: DNS_DMZ.md
+    - Résolver: Redirecteur_DNS.md
+    - DNS local: config_dns_local.md
       
   - Infra ↳ : 
     - Plan d'adressage: adressage.md
