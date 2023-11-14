@@ -16,12 +16,12 @@ Après avoir installé le DNS, il faudra installer un service DHCP pour attribue
 Plage d'adresse mise en place :
 <br>
 
-![Plage d'adresses exclues](/docs/img/DHCP/plage_exclue.PNG)
+![Plage d'adresses exclues](/././img/DHCP/plage_exclue.PNG)
 <br>
 
 Configuration des autres paramètres sur l'étendue DHCP :
 
-![Toutes les configurations apportées](./DHCP/config_resultats.PNG)
+![Toutes les configurations apportées](/././img/DHCP/config_resultats.PNG)
 
 Maintenant, faut tester sur une machine dans le VLAN.
 
