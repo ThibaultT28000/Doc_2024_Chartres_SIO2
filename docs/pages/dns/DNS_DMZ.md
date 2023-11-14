@@ -8,22 +8,22 @@ Toutes les lignes du fichier `named.conf.default-zones` sont mises `en commentai
 
 #Config#
 
-[db-chartres-sportludique-fr](/utilitaire/DNS-DMZ/db-chartres-sportludique-fr.txt)
+[db-chartres-sportludique-fr](../../../utilitaire/DNS-DMZ/db-chartres-sportludique-fr.txt)
 
 
-[db-chartres-sportludique-fr-internal](/utilitaire/DNS-DMZ/db-chartres-sportludique-fr-internal.txt)
+[db-chartres-sportludique-fr-internal](../../../utilitaire/DNS-DMZ/db-chartres-sportludique-fr-internal.txt)
 
 
-[db-local](/utilitaire/DNS-DMZ/db-local.txt)
+[db-local](../../../utilitaire/DNS-DMZ/db-local.txt)
 
 
-[named-conf-default-zones](/utilitaire/DNS-DMZ/named-conf-default-zones.txt)
+[named-conf-default-zones](../../../utilitaire/DNS-DMZ/named-conf-default-zones.txt)
 
 
-[named-conf-local](/utilitaire/DNS-DMZ/named-conf-local.txt)
+[named-conf-local](../../../utilitaire/DNS-DMZ/named-conf-local.txt)
 
 
-[named-conf-options](/utilitaire/DNS-DMZ/named-conf-options.txt)
+[named-conf-options](../../../utilitaire/DNS-DMZ/named-conf-options.txt)
 
 
-[named-conf](/utilitaire/DNS-DMZ/named-conf.txt)
+[named-conf](../../../utilitaire/DNS-DMZ/named-conf.txt)

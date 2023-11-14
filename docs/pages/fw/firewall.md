@@ -34,7 +34,7 @@ Cliquer sur le port souhaité puis AJOUTER -> VLAN -> pour (port)
 
 VLANs ayant été ajoutés :
 
-![Organisation des ports](/img/Firewall/orga_vlan.PNG)
+![Organisation des ports](../../../img/Firewall/orga_vlan.PNG)
 
 ## Gérer les accès à l'administration
 
