@@ -9,6 +9,6 @@ Nous avons ping avec un ordinateur en 192.168.28.x pour voir si la règle foncti
 ![WireShark](../../../img/PFS/withnat.png)
 
 
-![interfaces](../../../img/interface_PFS.jpg)
+![interfaces](../../../img/Firewall/interface_PFS.jpg)
 
 [Conf du pfSense ici](../../../utilitaire/Conf-pfSense/conf-pfSense-Chartres-06-11-23.txt)
