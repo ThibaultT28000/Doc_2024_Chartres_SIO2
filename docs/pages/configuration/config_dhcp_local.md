@@ -21,7 +21,7 @@ Plage d'adresse mise en place :
 
 Configuration des autres paramètres sur l'étendue DHCP :
 
-![Toutes les configurations apportées](/././img/DHCP/config_resultats.PNG)
+![Toutes les configurations apportées](../img/DHCP/config_resultats.PNG)
 
 Maintenant, faut tester sur une machine dans le VLAN.
 
