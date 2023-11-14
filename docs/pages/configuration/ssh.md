@@ -41,4 +41,4 @@ Cette ligne indique que l'appareil utilisera les compte locaux pour l'authentifi
 `username admin password P@ssw0rd123456!`
 
 
-![switch](./img/putty.png)
+![switch](/img/putty.png)

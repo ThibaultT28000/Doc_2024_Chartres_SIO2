@@ -4,35 +4,33 @@ theme:
   custom_dir: overrides
 nav:
   - index.md
-
-  
    
   - Configuration ↳ : 
-    - Access Control List: ACL.md
-    - DHCP: config_dhcp_local.md
-    - SSH: ssh.md
-    - NAT: Nat.md
-    - Création d'un vlan: vlan.md
+    - Access Control List: ./pages/configuration/ACL.md
+    - DHCP: ./pages/configuration/config_dhcp_local.md
+    - SSH: ./pages/configuration/ssh.md
+    - NAT: ./pages/configuration/Nat.md
+    - Création d'un vlan: ./pages/configuration/vlan.md
     
   - Serveur ↳ :  
-    - Serveur http: SRV-hhtp.md
-    - HTTPS: https.md
+    - Serveur http: ./pages/serveur/SRV-hhtp.md
+    - HTTPS: ./pages/serveur/https.md
 
   - Solutions de pare-feu ↳ : 
-    - PFSense: PfSense.md
-    - Firewall physique: firewall.md
+    - PFSense: ./pages/fw/PfSense.md
+    - Firewall physique: ./pages/fw/firewall.md
 
   - Redondance ↳ : 
-    - GLBP: glbp.md
-    - HSRP: HSRP.md
+    - GLBP: ./pages/redondance/glbp.md
+    - HSRP: ./pages/redondance/HSRP.md
 
   - DNS ↳ :
-    - Résolver DNS: DNS_DMZ.md
-    - Résolver: Redirecteur_DNS.md
-    - DNS local: config_dns_local.md
+    - Résolver DNS: ./pages/dns/DNS_DMZ.md
+    - Résolver: ./pages/dns/Redirecteur_DNS.md
+    - DNS local: ./pages/dns/config_dns_local.md
       
   - Infra ↳ : 
-    - Plan d'adressage: adressage.md
-    - Brassage: Brassage.md 
-    - Schèma logique & physique: Schema.md
+    - Plan d'adressage: ./pages/infra/adressage.md
+    - Brassage: ./pages/infra/Brassage.md 
+    - Schèma logique & physique: ./pages/infra/Schema.md
 

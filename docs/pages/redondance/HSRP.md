@@ -30,4 +30,4 @@ permet de reprendre le rôle de base pour R1 donc actif et R2 reviendra a passif
 
 Et voilà , HSRP est desormais actif et fonctionnel .
 
-![image de HSRP qui fonctionne](./img/hsrp.PNG)
+![image de HSRP qui fonctionne](/img/hsrp.PNG)
