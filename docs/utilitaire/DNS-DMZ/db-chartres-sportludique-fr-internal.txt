@@ -13,3 +13,6 @@ ns1     IN      A       192.168.28.115
 www	IN	A	192.168.28.120
 local.chartres.sportludique.fr.		IN	NS	cha-dns-local.local.chartres.sportludique.fr.
 cha-dns-local.local.chartres.sportludique.fr.  IN  A       172.28.65.1
+
+blog    IN  CNAME   www.chartres.sportludique.fr
+
