@@ -45,9 +45,13 @@ La plage d'adresses des serveurs est de X.100 à X.150 sur tout les réseau
 | Redirecteur-DNS | 172.28.64.110 
 | Resolver-DNS    | 172.28.64.115     
 | CHA-SRV-http    | 172.28.64.120  
+| SRV-Docker      | 172.28.64.125
 | BDD             | 172.28.64.145 
 | Stormshield     | 172.28.64.154 
-| PFSense         | 172.28.64.155
+| PFSense 1       | 172.28.64.155
+| PFSense 2       | 172.28.64.156
+| Reverse Proxy 1 | 172.28.64.157
+| Reverse Proxy 2 | 172.28.64.158
 
 
 
@@ -97,9 +101,15 @@ VIP : ` 172.28.71.254 `
 | Nom Hôte | @IP |
 |----------|-----|
 | stormshield  | 192.168.28.1 |
+| SRV-DNS  | 192.168.28.115 |
+| SRV-http  | 192.168.28.120 |
+| SRV-Doker  | 192.168.28.125 |
+| ReverseProxy 1 | 192.168.28.250 |
+| ReverseProxy 2  | 192.168.28.251 |
+| PFSense 1  | 192.168.28.252 |
+| PFSense 2  | 192.168.28.253 |
 | PFSense (CARP)  | 192.168.28.254 |
-| DNS  | 192.168.28.115 |
-| CHA-SRV-http  | 192.168.28.120 |
+
 
 </br>
 Interfaces disponibles pour la `DMZ` : ` Gi 1/0/5 à 1/0/8 ` Et ` Gi 2/0/5 à 1/0/8 ` 

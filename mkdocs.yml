@@ -34,3 +34,5 @@ nav:
     - Brassage: ./pages/infra/Brassage.md 
     - Schèma logique & physique: ./pages/infra/Schema.md
 
+markdown_extensions:
+  - attr_list
