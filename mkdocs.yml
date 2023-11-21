@@ -15,6 +15,7 @@ nav:
   - Serveur ↳ :  
     - Serveur http: ./pages/serveur/SRV-hhtp.md
     - HTTPS: ./pages/serveur/https.md
+    - Wordpress: ./pages/wordpress/conf-wp.md
 
   - Solutions de pare-feu ↳ : 
     - PFSense: ./pages/fw/PfSense.md
@@ -28,7 +29,7 @@ nav:
     - Résolver DNS: ./pages/dns/DNS_DMZ.md
     - Résolver: ./pages/dns/Redirecteur_DNS.md
     - DNS local: ./pages/dns/config_dns_local.md
-      
+
   - Infra ↳ : 
     - Plan d'adressage: ./pages/infra/adressage.md
     - Brassage: ./pages/infra/Brassage.md 
