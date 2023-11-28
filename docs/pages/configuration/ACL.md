@@ -17,17 +17,20 @@ ACL : Access control list. Les Access lists permettent de filtrer les entrées e
 
 ## **Liste des ACL misent en place**
 
-| N°ACL | Application | ACL |équipement|
-|---------------|---------|------------|----|
-| 100 | Vlan 230 | Refuse toute les entrées et autorise le SSH  | switch |
-| 10 | Vlan 233 | autorise les membres du réseau 172.28.64.0 à accéder à internet | routeur |
-| 101 | Vlan 230 | ouvre le port 69 pour récuperer la conf | routeur |
+| N°ACL | Application |équipement|
+|-------|--------|---------|
+| 100 | Vlan 230 | switch  |
+| 105 | Vlan 230 | routeur |
+| 101 | Vlan 230 | routeur |
 
 </br>
-ACL 100 : `permit tcp 172.28.64.0 any eq 22 ` et ` deny ip any any `
+ACL 100 : `access-list 100 permit tcp 172.28.64.0 any eq 22 ` et ` deny ip any any `
 
 
-ACl 10 : `permit 172.28.64.0 0.0.31.255`
+ACl 105 : `access-list 105 permit tcp 10.28.64.0 0.0.0.255 eq 22 172.28.64.0 0.0.0.255`
 
 
-acl 101 : `permit udp 172.28.64.0 any eq 69 `
+ACl 105 : `access-list 105 permit tcp 172.28.64.0 0.0.0.255 any eq 22`
+
+
+acl 101 : `permit udp 172.28.64.0 any eq 69`

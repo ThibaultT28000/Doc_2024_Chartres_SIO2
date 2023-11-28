@@ -11,6 +11,7 @@ nav:
     - SSH: ./pages/configuration/ssh.md
     - NAT: ./pages/configuration/Nat.md
     - Création d'un vlan: ./pages/configuration/vlan.md
+    - Configuration des VPN: ./pages/configuration/Vpn.md
     
   - Serveur ↳ :  
     - Serveur http: ./pages/serveur/SRV-hhtp.md
