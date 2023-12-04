@@ -2,6 +2,7 @@
 
 Fichier de configuration du serveur Reverse Proxy [**ici**](../../utilitaire/nginx.conf)
 
+    ------------------------------------------------------------------------------
     http {
 	    server {
 		    #Site WEB APACHE HTTP
