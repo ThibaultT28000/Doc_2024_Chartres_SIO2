@@ -1,6 +1,11 @@
 # Ajout du service Reverse Proxy
 
-Fichier de configuration du serveur Reverse Proxy [**ici**](../../utilitaire/nginx.conf)
+⚠️ Ne surtout pas se tromper de certificats. Veuillez à mettre des noms de fichier permettant des les distinguer.
+
+## Contenu du fichier
+
+Le fichier ci-dessous correspond au fichier nginx.conf que vous pouvez télécharger [**juste ici**](../../utilitaire/nginx.conf)
+La version ci-dessous permet donc de mieux comprendre comment le fichier est organisé en fonction des besoins.
 
     --------------------------------------------------------------------------------
     http {
@@ -9,6 +14,7 @@ Fichier de configuration du serveur Reverse Proxy [**ici**](../../utilitaire/ngi
    		    listen 80;
    		    server_name www.chartres.sportludique.fr;
                	# mettre key
+
        		location / {
        			proxy_pass http://192.168.28.120;
        			include /etc/nginx/proxy_params;
@@ -72,4 +78,3 @@ Fichier de configuration du serveur Reverse Proxy [**ici**](../../utilitaire/ngi
     }
 
 
-⚠️ Ne surtout pas se tromper de certificats. Veuillez à mettre des noms de fichier permettant des les distinguer.
