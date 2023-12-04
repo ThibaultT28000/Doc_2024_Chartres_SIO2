@@ -4,7 +4,7 @@
 
 ## Contenu du fichier
 
-Le fichier ci-dessous correspond au fichier nginx.conf que vous pouvez télécharger [**juste ici**](../../utilitaire/nginx.conf)
+Le fichier ci-dessous correspond au fichier nginx.conf que vous pouvez retrouver [**juste ici**](../../utilitaire/nginx.conf)
 La version ci-dessous permet donc de mieux comprendre comment le fichier est organisé en fonction des besoins.
 
     --------------------------------------------------------------------------------
