@@ -26,6 +26,7 @@ nav:
   - Redondance ↳ : 
     - GLBP: ./pages/redondance/glbp.md
     - HSRP: ./pages/redondance/HSRP.md
+    - Heartbeat: ./pages/redondance/heartbeat.md
 
   - DNS ↳ :
     - Redirecteur DNS: ./pages/dns/DNS_DMZ.md
