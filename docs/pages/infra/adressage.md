@@ -41,7 +41,8 @@ La plage d'adresses des serveurs est de X.100 à X.150 sur tout les réseau
 | Switch          | 172.28.64.1     
 | R1-CHA          | 172.28.64.10  
 | R2-CHA          | 172.28.64.20   
-| DNS-local       | 172.28.64.100 
+| DNS-local       | 172.28.64.100
+| SRV SNMP        | 172.28.65.105  
 | Redirecteur-DNS | 172.28.64.110 
 | Resolver-DNS    | 172.28.64.115     
 | CHA-SRV-http    | 172.28.64.120  
@@ -71,6 +72,8 @@ Interface disponible pour le `Management` : ` Gi 1/0/1 à 1/0/4 ` Et ` Gi 2/0/1 
 |----------|-----|-----------|
 | SRV      | 172.28.65.1 | 172.28.65.254 | 
 | Switch   | 172.28.65.254 | 
+| SRV SNMP  | 172.28.65.5 |
+| Resolver DNS  | 172.28.65.110 |
 
 </br>
 Interface disponible pour le `Serveur` : ` Gi 1/0/23 à 1/0/24 ` Et ` Gi 2/0/23 à 1/0/24 ` 
@@ -101,14 +104,17 @@ VIP : ` 172.28.71.254 `
 | Nom Hôte | @IP |
 |----------|-----|
 | stormshield  | 192.168.28.1 |
+| SRV hmail  | 192.168.28.105 
 | SRV-DNS  | 192.168.28.115 |
 | SRV-http  | 192.168.28.120 |
 | SRV-Doker  | 192.168.28.125 |
 | ReverseProxy 1 | 192.168.28.250 |
-| ReverseProxy 2  | 192.168.28.251 |
+| ReverseProxy 2  | 192.168.28.249 |
+| ReverseProxy VIP  | 192.168.28.251 |
 | PFSense 1  | 192.168.28.252 |
 | PFSense 2  | 192.168.28.253 |
 | PFSense (CARP)  | 192.168.28.254 |
+
 
 
 </br>
@@ -136,10 +142,10 @@ Interface disponible pour l' `Utilisateur` : ` Gi 1/0/17 à 1/0/18 ` Et ` Gi 2/0
 
 ### VLAN 237 StormShield
 
-| Nom Hôte | @IP               | Passerelle    |  
-|----------|-------------------|---------------|
-| Switch   | 172.28.70.1     | 172.28.70.1 |  
-| stormshield | 172.28.70.253 | 172.28.70.254 | 
+| Nom Hôte | @IP               |
+|----------|-------------------|
+| Switch   | 172.28.70.1     | 
+| stormshield | 172.28.70.254 |
 
 
 </br>
@@ -151,4 +157,4 @@ Interface en mode Trunk : ` Gi 1/0/9 ` Et ` Gi 2/0/9 `
 
 ### DNS
 
-nom de domaine réseau privé : chartres.sportludique.fr
+nom de domaine réseau privé : local.chartres.sportludique.fr
