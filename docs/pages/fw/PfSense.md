@@ -12,3 +12,13 @@ Nous avons ping avec un ordinateur en 192.168.28.x pour voir si la règle foncti
 ![interfaces](../../../img/Firewall/interface_PFS.jpg)
 
 [Conf du pfSense ici](../../../utilitaire/Conf-pfSense/conf-pfSense-Chartres-06-11-23.txt)
+
+## Config CARP
+
+CARP permet la redondance du pfsense 
+
+Chaque PfSense à une interface dans le réseau `172.16.28.0 /24`  
+
+un Pfsense est configurer comme `master` et l'autre comme `secondaire` 
+
+Les modifications effectuer sur l'un serons automatiquement reproduite sur l'autre  
