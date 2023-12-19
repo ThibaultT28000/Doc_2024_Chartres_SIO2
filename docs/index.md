@@ -10,4 +10,19 @@ Le projet consiste à répondre à la demande de création d'une infrastructure 
 * Administrer un réseau pour qu'il corresponde aux attentes d'un client
 
 
-<meta name="google-site-verification" content="_fYLmNDi4Wd3a8kyMoN_rM9YwtR-wjVBRAb5FUIpOtM" />
+
+</br></br></br>
+
+### Documentation produite par :
+<style>
+    .badge-container {
+        display: inline-block;
+    }
+</style>
+
+<div class="badge-base LI-profile-badge badge-container" data-locale="fr_FR" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="thibault-trouillet-76338524b" data-version="v1"></div>
+
+<div class="badge-base LI-profile-badge badge-container" data-locale="fr_FR" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="raphaël-hirsch-4a644624b" data-version="v1"></div>
+
+
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
