@@ -24,5 +24,8 @@ Le projet consiste à répondre à la demande de création d'une infrastructure 
 
 <div class="badge-base LI-profile-badge badge-container" data-locale="fr_FR" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="raphaël-hirsch-4a644624b" data-version="v1"></div>
 
+<div class="badge-base LI-profile-badge" data-locale="fr_FR" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="bryan-boulay-0b000b24b" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://fr.linkedin.com/in/bryan-boulay-0b000b24b?trk=profile-badge"></a></div>
+              
+
 
 <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
