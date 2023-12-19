@@ -10,6 +10,7 @@ nav:
     - DHCP: ./pages/configuration/config_dhcp_local.md
     - SSH: ./pages/configuration/ssh.md
     - NAT: ./pages/configuration/Nat.md
+    - NMS: ./pages/configuration/SRV-NMS.md
     - Création d'un vlan: ./pages/configuration/vlan.md
     - Configuration des VPN: ./pages/configuration/Vpn.md
   
