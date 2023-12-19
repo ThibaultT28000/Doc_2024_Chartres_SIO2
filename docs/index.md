@@ -8,3 +8,6 @@ Le projet consiste à répondre à la demande de création d'une infrastructure 
 * Travailler en équipe 
 * Réaliser une documentation détaillée
 * Administrer un réseau pour qu'il corresponde aux attentes d'un client
+
+
+<meta name="google-site-verification" content="_fYLmNDi4Wd3a8kyMoN_rM9YwtR-wjVBRAb5FUIpOtM" />
