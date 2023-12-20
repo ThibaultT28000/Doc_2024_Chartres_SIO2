@@ -21,6 +21,7 @@ nav:
     - HTTPS: ./pages/serveur/https.md
     - Wordpress: ./pages/wordpress/conf-wp.md
     - Reverse Proxy: ./pages/serveur/reverseproxy.md
+    - Serveur HMAIL: ./pages/serveur/mail.md
 
   - Solutions de pare-feu ↳ : 
     - PFSense: ./pages/fw/PfSense.md
