@@ -9,7 +9,6 @@ nav:
     - Access Control List: ./pages/configuration/ACL.md
     - DHCP: ./pages/configuration/config_dhcp_local.md
     - SSH: ./pages/configuration/ssh.md
-    - NAT: ./pages/configuration/Nat.md
     - NMS: ./pages/configuration/SRV-NMS.md
     - Création d'un vlan: ./pages/configuration/vlan.md
     - Configuration des VPN: ./pages/configuration/Vpn.md
@@ -22,6 +21,7 @@ nav:
     - HTTPS: ./pages/serveur/https.md
     - Wordpress: ./pages/wordpress/conf-wp.md
     - Reverse Proxy: ./pages/serveur/reverseproxy.md
+    - Serveur HMAIL: ./pages/serveur/mail.md
 
   - Solutions de pare-feu ↳ : 
     - PFSense: ./pages/fw/PfSense.md
@@ -41,6 +41,8 @@ nav:
     - Plan d'adressage: ./pages/infra/adressage.md
     - Brassage: ./pages/infra/Brassage.md 
     - Schèma logique & physique: ./pages/infra/Schema.md
+    - NAT: ./pages/infra/Nat.md
+    - Routage: ./pages/infra/routage.md
 
 markdown_extensions:
   - attr_list
