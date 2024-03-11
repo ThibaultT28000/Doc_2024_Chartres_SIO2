@@ -1,80 +1,54 @@
 # Ajout du service Reverse Proxy
 
+## Pré-requis :
+<br>
+Installer le service Nginx sur la machine Debian
+
+### Création des différents fichiers de configuration
+
 ⚠️ Ne surtout pas se tromper de certificats. Veuillez à mettre des noms de fichier permettant des les distinguer.
 
-## Contenu du fichier
+Il faut créer un fichier PAR site (HTTP et HTTPS peuvent être dans le même fichier tant que c'est le même site).
 
-Le fichier ci-dessous correspond au fichier nginx.conf que vous pouvez retrouver [**juste ici**](../../utilitaire/nginx.conf)
-La version ci-dessous permet donc de mieux comprendre comment le fichier est organisé en fonction des besoins.
+	---------------------------------------------------
+	# FICHIER HTTP_WWW (il s'agit d'un éxemple, les autres fichiers seront juste en dessous de ça)
+	upstream backend {
+        server 192.168.28.120; # Adresse et port du premier serveur Apache
+        server 192.168.28.121; # Adresse et port du deuxième serveur Apache
+        # Ajoutez d'autres serveurs backend si nécessaire
+	}
 
-    --------------------------------------------------------------------------------
-    http {
-   	    server {
-   		    #Site WEB APACHE HTTP
-   		    listen 80;
-   		    server_name www.chartres.sportludique.fr;
-               	# mettre key
+	#server {
+			
+	#		listen 80;
+	#       server_name www.chartres.sportludique.fr;
+	#       return 301 https://$host$request_uri;
+	#       location / {
+	#               proxy_pass http://192.168.28.120;
+	#               include proxy_params;
+	#       }
+	#}
 
-       		location / {
-       			proxy_pass http://192.168.28.120;
-       			include /etc/nginx/proxy_params;
-       		}
-        }
+	server {
 
-       	server {
-      		# Site WEB APACHE HTTPS
-   	    	listen 443 ssl;
-       		server_name www.chartres.sportludique.fr;
+		    listen 443 ssl;
+		    server_name www.chartres.sportludique.fr;
+		    ssl_certificate /etc/certificats/www-chartres.pem;
+    	    ssl_certificate_key /etc/certificats/www-chartres.pem;
+    	    access_log /var/log/nginx/www_access.log;
+    	    error_log /var/log/nginx/www_error.log;
+    	    location / {
+    	            proxy_pass http://backend;
+    	            include proxy_params;
+    	    }
+	}
 
-   	    	ssl_certificate /etc/certificats/certificat_siteweb.crt;
-   	    	ssl_certificate_key /etc/certificats/privatekey_siteweb.key;
+## LES FICHIERS DE CONFIGURATION
 
-        # ... autres directives SSL (comme ssl_protocols, ssl_ciphers, etc.)
+Ne pas oublier de faire de lien symbolique dans le répertoire sites-enabled
 
-  	    	location / {
-   	    		proxy_pass http://192.168.28.120;
-   	    		include /etc/nginx/proxy_params;
-   	    	}
-       	}
+Les fichiers :
 
-       	server {
-       		# Site WEB BLOG HTTP
-       		listen 80;
-       		server_name blog.chartres.sportludique.fr;
-       		return 301 https://$host$request_uri;
-
-       		location / {
-       			proxy_pass http://192.168.28.120; 
-       			include /etc/nginx/proxy_params;
-       		}
-       	}
-
-   	    server {
-       		# Site WEB BLOG HTTPS
-       		listen 443 ssl;
-       		server_name blog.chartres.sportludique.fr;
-
-        	ssl_certificate /etc/certificats/certificat_blog.crt;
-   	    	ssl_certificate_key /etc/certificats/privatekey_blog.key;
-
-       		# ... autres directives SSL (comme ssl_protocols, ssl_ciphers, etc.)
-
-   	    	location / {
-        		proxy_pass http://192.168.1.120;
-   	    		include /etc/nginx/proxy_params;
-        	}
-       	}
-
-       	server {
-   		#Site WEB DOCKER HTTP
-       		listen 80;
-       		server_name node.chartres.sportludique.fr;
-
-   	    	location / {
-   	    		proxy_pass http://192.168.28.125;  #
-        		include /etc/nginx/proxy_params;
-            }
-        }
-    }
-
-
+![Fichier WWW](../../utilitaire/fichiers_reverseproxy/http_www)
+![Fichier BLOG](../../utilitaire/fichiers_reverseproxy/http_blog)
+![Fichier Node](../../utilitaire/fichiers_reverseproxy/http_node)
