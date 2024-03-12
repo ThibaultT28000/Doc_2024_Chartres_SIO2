@@ -52,6 +52,8 @@ La plage d'adresses des serveurs est de X.100 à X.200 sur tout les réseau
 | CHA-blog-enzo   | 172.28.64.122 |     linux     |
 | CHA-SRV-Docker  | 172.28.64.125 |     linux     |
 | CHA-BDD         | 172.28.64.145 |     linux     |
+| CHA-Bastion     | 172.28.64.150 |     linux     |
+| CHA-PA          | 172.28.64.153 | OS Spécifique |
 | Stormshield     | 172.28.64.154 |      web      |
 | PFSense 1       | 172.28.64.155 |      web      |
 | PFSense 2       | 172.28.64.156 |      web      |
@@ -155,6 +157,7 @@ Interface disponible pour l' `Utilisateur` : ` Gi 1/0/17 à 1/0/18 ` Et ` Gi 2/0
 | Switch   | 172.28.70.1     | 
 | stormshield | 172.28.70.254 |
 
+### VLAN 238 Invité Wifi
 
 </br>
 Interface disponible pour l' `StormShield` : ` Gi 1/0/9 à 1/0/12 ` Et ` Gi 2/0/9 à 1/0/12 ` 
