@@ -40,11 +40,12 @@ La plage d'adresses des serveurs est de X.100 à X.200 sur tout les réseau
 
 |    Nom Hôte     |      @IP      |      OS       | 
 |-----------------|---------------|---------------|
-| Switch          | 172.28.64.1   |     linux     |
-| R1-CHA          | 172.28.64.10  |     linux     |
-| R2-CHA          | 172.28.64.20  |     linux     |
+| Switch          | 172.28.64.1   |     cisco     |
+| R1-CHA          | 172.28.64.10  |     cisco     |
+| R2-CHA          | 172.28.64.20  |     cisco     |
 | DNS-local       | 172.28.64.100 |      WIN      |
 | CHA-SRV-NMS     | 172.28.64.101 |   linux/web   |
+| cha-Graylog     | 172.28.64.102 |     linux     |
 | CHA-SRV-hmail   | 172.28.64.105 |      WIN      |
 | Redirecteur-DNS | 172.28.64.110 |     linux     |
 | Resolver-DNS    | 172.28.64.115 |     linux     | 
@@ -52,7 +53,8 @@ La plage d'adresses des serveurs est de X.100 à X.200 sur tout les réseau
 | CHA-blog-enzo   | 172.28.64.122 |     linux     |
 | CHA-SRV-Docker  | 172.28.64.125 |     linux     |
 | CHA-BDD         | 172.28.64.145 |     linux     |
-| CHA-Bastion     | 172.28.64.150 |     linux     |
+| CHA-wallix      | 172.28.64.149 | linux/web     |
+| CHA-Bastion     | 172.28.64.150 |  linux/web    |
 | CHA-PA          | 172.28.64.153 | OS Spécifique |
 | Stormshield     | 172.28.64.154 |      web      |
 | PFSense 1       | 172.28.64.155 |      web      |
@@ -157,10 +159,15 @@ Interface disponible pour l' `Utilisateur` : ` Gi 1/0/17 à 1/0/18 ` Et ` Gi 2/0
 | Switch   | 172.28.70.1     | 
 | stormshield | 172.28.70.254 |
 
+</br>
+Interface disponible pour l' `StormShield` : ` Gi 1/0/9 à 1/0/12 ` Et ` Gi 2/0/9 à 1/0/12 `
+
 ### VLAN 238 Invité Wifi
 
 </br>
-Interface disponible pour l' `StormShield` : ` Gi 1/0/9 à 1/0/12 ` Et ` Gi 2/0/9 à 1/0/12 ` 
+Interface disponible pour l' `Invité WIfi` : ` Gi 1/0/21 à 1/0/22 ` Et ` Gi 2/0/21 à 1/0/22 ` 
+
+ 
 
 
 Interface en mode Trunk : ` Gi 1/0/9 ` Et ` Gi 2/0/9 `
