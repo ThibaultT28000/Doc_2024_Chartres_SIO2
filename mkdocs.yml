@@ -23,6 +23,7 @@ nav:
     - Wordpress: ./pages/wordpress/conf-wp.md
     - Reverse Proxy: ./pages/serveur/reverseproxy.md
     - Serveur HMAIL: ./pages/serveur/mail.md
+    - Bastion Guaca: ./pages/serveur/guacamole.md
 
   - Solutions de pare-feu ↳ : 
     - PFSense: ./pages/fw/PfSense.md
