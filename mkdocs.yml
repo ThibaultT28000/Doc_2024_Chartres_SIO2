@@ -12,7 +12,7 @@ nav:
     - NMS: ./pages/configuration/SRV-NMS.md
     - Création d'un vlan: ./pages/configuration/vlan.md
     - Configuration des VPN: ./pages/configuration/Vpn.md
-    - Point d'accès: ./pages/configuration/pa.md
+    - Bastion Guacamole: ./pages/configuration/bastion.md
   
   - Filtrage ↳ :
     - Proxy: ./pages/Filtrage/Proxy.md
@@ -23,7 +23,6 @@ nav:
     - Wordpress: ./pages/wordpress/conf-wp.md
     - Reverse Proxy: ./pages/serveur/reverseproxy.md
     - Serveur HMAIL: ./pages/serveur/mail.md
-    - Bastion Guaca: ./pages/serveur/guacamole.md
 
   - Solutions de pare-feu ↳ : 
     - PFSense: ./pages/fw/PfSense.md
