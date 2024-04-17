@@ -49,10 +49,41 @@ Ne pas oublier de faire de lien symbolique dans le répertoire sites-enabled
 
 Les fichiers :
 
-![Fichier WWW](../../utilitaire/fichiers_reverseproxy/http_www.txt)
+site WWW :
+
+	server {
+
+    	    listen 443 ssl;
+    	    server_name www.chartres.sportludique.fr;
+    	    ssl_certificate /etc/certificats/certificat_sites.pem;
+    	    ssl_certificate_key /etc/certificats/passphrase.pem;
+    	    location / {
+        	        proxy_pass http://backend;
+    	            include proxy_params;
+        	}
+	}
 
 
-![Fichier BLOG](../../utilitaire/fichiers_reverseproxy/http_blog.txt)
+	server {
 
+    	    listen 443 ssl;
+    	    server_name blog.chartres.sportludique.fr;
+    	    ssl_certificate /etc/certificats/certificat_sites.pem;
+    	    ssl_certificate_key /etc/certificats/passphrase.pem;
+    	    location / {
+    	            proxy_pass http://192.168.28.120;
+    	            include proxy_params;
+    	    }
+	}
 
-![Fichier Node](../../utilitaire/fichiers_reverseproxy/http_node.txt)
+	server {
+	    listen 80;
+    	server_name enzo.chartres.sportludique.fr;
+	#    access_log /var/log/nginx/enzo_access.log;
+	#    error_log /var/log/nginx/enzo_error.log;
+
+	    location / {
+	        proxy_pass http://192.168.28.122;
+	        include proxy_params;
+	    }
+	}
