@@ -63,6 +63,7 @@ site WWW :
         	}
 	}
 
+Site du Blog :
 
 	server {
 
@@ -75,6 +76,8 @@ site WWW :
     	            include proxy_params;
     	    }
 	}
+
+Site d'Enzo :
 
 	server {
 	    listen 80;
