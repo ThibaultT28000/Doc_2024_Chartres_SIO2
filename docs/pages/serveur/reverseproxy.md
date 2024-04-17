@@ -50,5 +50,9 @@ Ne pas oublier de faire de lien symbolique dans le répertoire sites-enabled
 Les fichiers :
 
 ![Fichier WWW](../../utilitaire/fichiers_reverseproxy/http_www.txt)
+
+
 ![Fichier BLOG](../../utilitaire/fichiers_reverseproxy/http_blog.txt)
+
+
 ![Fichier Node](../../utilitaire/fichiers_reverseproxy/http_node.txt)
