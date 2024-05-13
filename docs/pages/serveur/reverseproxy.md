@@ -49,7 +49,7 @@ Ne pas oublier de faire de lien symbolique dans le répertoire sites-enabled
 
 Les fichiers :
 
-site WWW :
+site WWW (HTTPS):
 
 	server {
 
